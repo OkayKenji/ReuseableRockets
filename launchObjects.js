@@ -1,5 +1,4 @@
-let rockets = 
-{
+let rockets = {
     falcons : {
         boosters : [
             { 
