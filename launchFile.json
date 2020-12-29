@@ -585,21 +585,6 @@
                   "notes"       : ""
                 }      
               ] 
-            },
-            {  
-              "name" : "S/N", 
-              "status" : "THE status OF THE BOOOSTER",
-              "flights" : [
-                {
-                  "missionName" : "",
-                  "falconType"  : "",
-                  "missionDate" : { "date" : "//", "time" : ":" },
-                  "launchLoc"    : "",
-                  "recovery"    : { "type": "", "name" : "", "status" : "" },
-                  "status"      : "",
-                  "notes"       : ""
-                }
-              ] 
             }
         ]
     }
