@@ -213,7 +213,7 @@ let rockets = {
             },
             {  
               name : 1051, 
-              status : "TActive",
+              status : "Active",
               flights : [
                 {
                   missionName : "Crew Demo-1",
@@ -254,7 +254,7 @@ let rockets = {
                 {
                   missionName : "Starlink 9 v1.0 (with SXRS-1)",
                   falconType  : "Falcon 9",
-                  missionDate : { date : "08/07", time : "05:12" },
+                  missionDate : { date : "08/07/2020", time : "05:12" },
                   launchLoc   : "LC-39A",
                   recovery    : { type: "Drone ship", name : "OCISLY", status : "Successful" },
                   status      : "Successful",
@@ -282,34 +282,310 @@ let rockets = {
             },
             {  
               name : 1052, 
-              status : "THE STATUS OF THE BOOOSTER",
+              status : "Active",
               flights : [
                 {
-                  missionName : "",
-                  falconType  : "",
-                  missionDate : { date : "//", time : ":" },
-                  launchLoc    : "",
-                  recovery    : { type: "", name : "", status : "" },
-                  status      : "",
+                  missionName : "Arabsat-6A",
+                  falconType  : "Falcon Heavy",
+                  missionDate : { date : "04/11/2019", time : "22:35" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Ground pad", name : "LZ-1/LZ-2", status : "Successful" },
+                  status      : "Successful",
+                  notes       : "First Block 5 variant of the Falcon Heavy to be launched."
+                },
+                {
+                  missionName : "STP-2",
+                  falconType  : "Falcon Heavy",
+                  missionDate : { date : "06/25/2019", time : "06:30" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Ground pad", name : "LZ-1/LZ-2", status : "Successful" },
+                  status      : "Successful",
                   notes       : ""
-                }
+                },
               ] 
             },
             {  
               name : 1053, 
-              status : "THE STATUS OF THE BOOOSTER",
+              status : "Active",
               flights : [
                 {
-                  missionName : "",
-                  falconType  : "",
-                  missionDate : { date : "//", time : ":" },
-                  launchLoc    : "",
-                  recovery    : { type: "", name : "", status : "" },
-                  status      : "",
+                  missionName : "Arabsat-6A",
+                  falconType  : "Falcon Heavy",
+                  missionDate : { date : "04/11/2019", time : "22:35" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Ground pad", name : "LZ-1/LZ-2", status : "Successful" },
+                  status      : "Successful",
+                  notes       : "First Block 5 variant of the Falcon Heavy to be launched."
+                },
+                {
+                  missionName : "STP-2",
+                  falconType  : "Falcon Heavy",
+                  missionDate : { date : "06/25/2019", time : "06:30" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Ground pad", name : "LZ-1/LZ-2", status : "Successful" },
+                  status      : "Successful",
                   notes       : ""
+                },
+              ] 
+            },
+            {  
+              name : 1054, 
+              status : "Inactive",
+              flights : [
+                {
+                  missionName : "GPS III SV01",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "12/22/2018", time : "13:51" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "No attempt", name : "", status : "Expended" },
+                  status      : "Successful",
+                  notes       : "Per the mission requirements the booster was expended."
+                },
+              ] 
+            },
+            {  
+              name : 1055, 
+              status : "Inactive",
+              flights : [
+                {
+                  missionName : "Arabsat-6A",
+                  falconType  : "Falcon Heavy",
+                  missionDate : { date : "04/11/2919", time : "22:35" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Failure" },
+                  status      : "Successful",
+                  notes       : "After a good landing, center core fell over in the seas because octograbber was not configured for the center core ."
+                },
+              ] 
+            },
+            {  
+              name : 1056, 
+              status : "Inactive",
+              flights : [
+                {
+                  missionName : "CRS-17",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "05/04/2019", time : "06:48" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                },
+                {
+                  missionName : "CRS-18",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "07/25/2019", time : "22:01" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Ground pad", name : "LZ-1", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                },
+                {
+                  missionName : "JCSAT-18/Kacific1",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "12/17/2019", time : "00:10" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                },
+                {
+                  missionName : "Starlink 4 v1.0",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "02/17/2020", time : "15:05" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Failure" },
+                  status      : "Successful",
+                  notes       : "Booster was loaded with incorrect data leading to a landing failure."
+                },
+              ] 
+            },
+            {  
+              name : 1057, 
+              status : "Inactive",
+              flights : [
+                {
+                  missionName : "STP-2",
+                  falconType  : "Falcon Heavy",
+                  missionDate : { date : "06/25/2019", time : "06:30" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Failure" },
+                  status      : "Successful",
+                  notes       : "High entry forces and heat caused the TVC in the center engine to fail causing the landing to fail."
                 }
               ] 
-            },  
+            },
+            {  
+              name : 1058, 
+              status : "Active",
+              flights : [
+                {
+                  missionName : "Crew Demo-2",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "05/30/2020", time : "19:22" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Successful" },
+                  status      : "Successful",
+                  notes       : "Mission successfully launched Bob Behnken and Doug Hurley safely to the ISS."
+                },
+                {
+                  missionName : "ANASIS-II",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "07/20/2020", time : "21:30" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Drone ship", name : "JRtI", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                },
+                {
+                  missionName : "Starlink 12 v1.0",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "10/06/2020", time : "11:29" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                },
+                {
+                  missionName : "CRS-21",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "12/06/2020", time : "16:17" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Successful" },
+                  status      : "Successful",
+                  notes       : "First cargo launch of new Dragon variant."
+                },        
+              ] 
+            },
+            {  
+              name : 1059, 
+              status : "Active",
+              flights : [
+                {
+                  missionName : "CRS-19",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "12/05/2019", time : "17:29" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                },
+                {
+                  missionName : "CRS-20",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "03/07/2020", time : "04:50" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                },
+                {
+                  missionName : "Starlink 8 v1.0 (with Skysats 16-18)",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "06/13/2020", time : "09:21" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Successful" },
+                  status      : "Successful",
+                  notes       : "Only launched 58 satellites."
+                },
+                {
+                  missionName : "SAOCOM 1B",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "08/30/2020", time : "23:18" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Ground pad", name : "LZ-1", status : "Successful" },
+                  status      : "Successful",
+                  notes       : "First polar launch from from Florida since the 1960s."
+                },
+                {
+                  missionName : "NROL-108",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "112/19/2020", time : "14:00" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Ground pad", name : "LZ-1", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                },       
+              ] 
+            },
+            {  
+              name : 1060, 
+              status : "Active",
+              flights : [
+                {
+                  missionName : "GPS III SV03",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "06/30/2020", time : "20:10" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Drone ship", name : "JRtI", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                },
+                {
+                  missionName : "Starlink 11 v1.0",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "09/03/2020", time : "12:46" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Drone ship", name : "OCISLY", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                },
+                {
+                  missionName : "Starlink 14 v1.0",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "10/24/2020", time : "15:31" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Drone ship", name : "JRtI", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                },
+              ] 
+            },
+            {  
+              name : 1061, 
+              status : "Active",
+              flights : [
+                {
+                  missionName : "Crew-1",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "11/16/2020", time : "00:27" },
+                  launchLoc   : "LC-39A",
+                  recovery    : { type: "Drone ship", name : "JRtI", status : "Successful" },
+                  status      : "Successful",
+                  notes       : "Successfully launched Mike Hopkins, Victor Glover, Shannon Walker, and Sochi Noguchi."
+                },
+              ] 
+            },
+            {  
+              name : 1062, 
+              status : "Active",
+              flights : [
+                {
+                  missionName : "GPS III SV04",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "11/05/2020", time : "23:24" },
+                  launchLoc   : "SLC-40",
+                  recovery    : { type: "Drone ship", name : "JRtI", status : "Successful" },
+                  status      : "Successful",
+                  notes       : "Initial landing was scrubbed due to higher then expected pressure in the gas generators due to left over lacquer."
+                },       
+              ] 
+            },
+            {  
+              name : 1063, 
+              status : "Active",
+              flights : [
+                {
+                  missionName : "Sentinel-6",
+                  falconType  : "Falcon 9",
+                  missionDate : { date : "11/21/2020", time : "17:17" },
+                  launchLoc   : "SLC-4E",
+                  recovery    : { type: "Ground pad", name : "LZ-4", status : "Successful" },
+                  status      : "Successful",
+                  notes       : ""
+                }  
+              ] 
+            },
             {  
               name : "S/N", 
               status : "THE STATUS OF THE BOOOSTER",
