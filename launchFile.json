@@ -26,7 +26,7 @@
                 {
                   "missionName" : "Spaceflight SSO-A",
                   "falconType"  : "Falcon 9",
-                  "missionDate" : { "date" : "12/3/2018", "time" : "18:34" },
+                  "missionDate" : { "date" : "12/03/2018", "time" : "18:34" },
                   "launchLoc"   : "SLC-4E",
                   "recovery"    : { "type": "Drone ship", "name" : "JRtI", "status" : "Successful" },
                   "status"      : "Successful",
@@ -500,7 +500,7 @@
                 {
                   "missionName" : "NROL-108",
                   "falconType"  : "Falcon 9",
-                  "missionDate" : { "date" : "112/19/2020", "time" : "14:00" },
+                  "missionDate" : { "date" : "12/19/2020", "time" : "14:00" },
                   "launchLoc"   : "LC-39A",
                   "recovery"    : { "type" : "Ground pad", "name" : "LZ-1", "status" : "Successful" },
                   "status"      : "Successful",
