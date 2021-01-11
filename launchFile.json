@@ -360,7 +360,7 @@
             },
             {  
               "name" : 1056, 
-              "status" : "THE STATUS OF THE BOOOSTER",
+              "status" : "Inactive",
               "flights" : [
                 {
                   "missionName" : "CRS-17",
