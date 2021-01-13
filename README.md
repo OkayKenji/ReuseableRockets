@@ -7,3 +7,5 @@ Plans to track
  - Starship
  - Electron
  - Space shuttle and SRBS???
+
+v0.0.1.20210113 - Intial release, only has Falcon data.   
