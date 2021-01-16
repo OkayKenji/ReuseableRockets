@@ -2,39 +2,17 @@
 <html>
 <script>
     let list = []; 
-    let list1 = [];
-function formatOBJ() {
-    let missName = document.getElementById("missionName").value;
-    let fType = document.getElementById("falconType").value;
-    let missDate = document.getElementById("missionDate").value;
-    let missTime = document.getElementById("missionTime").value;
-    let lLoc = document.getElementById("launchLoc").value;
-    let recType = document.getElementById("recoveryType").value;
-    let recName = document.getElementById("recoveryName").value;
-    let recStatus = document.getElementById("recoveryStatus").value;
-    let missionStat = document.getElementById("status").value;
-    let notes = document.getElementById("notes").value;
-    let formatedText = "                {\n"; 
-    formatedText+="                  missionName : \""+missName+"\",\n";
-    formatedText+="                  falconType  : \""+fType+"\",\n";
-    formatedText+="                  missionDate : { date : \""+missDate+"\", time : \""+missTime+"\" },\n";
-    formatedText+="                  launchLoc   : \""+lLoc+"\",\n";
-    formatedText+="                  recovery    : { type: \""+recType+"\", name : \""+recName+"\", status : \""+recStatus+"\" },\n";
-    formatedText+="                  status      : \""+missionStat+"\",\n";
-    formatedText+="                  notes       : \""+notes+"\"\n";
-    formatedText+="                },";
-    list.push(formatedText);
-    let print = ""; 
-    for (let i = 0 ; i < list.length ; i++ ) {
-        print+=list[i]+"\n";
-    }
-    document.getElementById("LEAD").innerHTML = print;
 
+function dataCheck(date,time) {
+    if (date.length != 10  || time.length != 5) {
+        return false;
+    } else 
+        return true;
 }
 
 function formatJSON() {
     let missName = document.getElementById("missionName").value;
-    let fType = document.getElementById("falconType").value;
+    let vehicle = document.getElementById("vehicle").value;
     let missDate = document.getElementById("missionDate").value;
     let missTime = document.getElementById("missionTime").value;
     let lLoc = document.getElementById("launchLoc").value;
@@ -43,26 +21,30 @@ function formatJSON() {
     let recStatus = document.getElementById("recoveryStatus").value;
     let missionStat = document.getElementById("status").value;
     let notes = document.getElementById("notes").value;
+
+    if (dataCheck(missDate,missTime)) {
     let formatedText = "                {\n"; 
     formatedText+="                  \"missionName\" : \""+missName+"\",\n";
-    formatedText+="                  \"falconType\"  : \""+fType+"\",\n";
+    formatedText+="                  \"vehicle\"     : \""+vehicle+"\",\n";
     formatedText+="                  \"missionDate\" : { \"date\" : \""+missDate+"\", \"time\" : \""+missTime+"\" },\n";
     formatedText+="                  \"launchLoc\"   : \""+lLoc+"\",\n";
     formatedText+="                  \"recovery\"    : { \"type\" : \""+recType+"\", \"name\" : \""+recName+"\", \"status\" : \""+recStatus+"\" },\n";
     formatedText+="                  \"status\"      : \""+missionStat+"\",\n";
     formatedText+="                  \"notes\"       : \""+notes+"\"\n";
     formatedText+="                },";
-    list1.push(formatedText);
+    list.push(formatedText);
     let print = ""; 
-    for (let i = 0 ; i < list1.length ; i++ ) {
-        print+=list1[i]+"\n";
+    for (let i = 0 ; i < list.length ; i++ ) {
+        print+=list[i]+"\n";
     }
     document.getElementById("LEAD1").innerHTML = print;
+    } else
+    alert("Date or time not formatted correctly (E0)");
 }
 
 function reset() {
     document.getElementById("missionName").value = "";
-    document.getElementById("falconType").value = "Falcon 9";
+    document.getElementById("vehicle").value = "Falcon 9";
     document.getElementById("missionDate").value = "";
     document.getElementById("missionTime").value = "";
     document.getElementById("launchLoc").value = "";
@@ -80,9 +62,10 @@ function reset() {
 <body>
 Mission Name <input id="missionName"></input><br />
 Faclon Type  
-<select id="falconType">
+<select id="vehicle">
     <option value="Falcon 9">F9</option>
     <option value="Falcon Heavy">FH</option>
+    <option value="Electron">Electron</option>
 </select><br />
 Mission Date <input id="missionDate"></input><br />
 Mission Time <input id="missionTime"></input><br />
@@ -92,10 +75,9 @@ Recovery name <input id="recoveryName"></input><br />
 Recovery status <input id="recoveryStatus"></input><br />
 Mission Status <input id="status"></input><br />
 Mission Notes <input id="notes"></input><br />
-<button onClick="formatJSON(); formatOBJ();">Format!</button><br />
+<button onClick="formatJSON();">Format!</button><br />
 <button onClick="reset()">Reset</button><br />
-<h1>Object</h1>
-<pre id="LEAD"></pre>
+
 <h1>json</h1>
 <pre id="LEAD1"></pre>
 </body>

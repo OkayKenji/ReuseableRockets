@@ -13,17 +13,18 @@
 //  - Space Shuttles (and maybe the SRBs??)
 let jsonData;
 let falconB5Data;
+let electronData;
 
 function preload() {
-  let url = 'https://raw.githubusercontent.com/OkayKenji/RocketsRCool/master/launchFile.json'
+  let url = 'launchFile.json'
   jsonData = loadJSON(url);
 }
 
 function setup() {
-  falconB5Data = jsonData.falcons.boosters;
+  falconB5Data = jsonData.SpaceX.FB5boosters;
+  electronData = jsonData.RocketLab.Electron;
   let tempHeight = 0;
   for (let i = 0; i < falconB5Data.length; i++) {
-
     tempHeight += falconB5Data[i].flights.length;
   }
   createCanvas(5000, tempHeight * 32 + falconB5Data.length * 16 + 40);
@@ -36,6 +37,7 @@ function draw() {
   strokeWeight(2);
   textSize(32)
 
+  //Header
   text("S/N", 0, 32);
   text("Status", 100, 32)
   text("# Flights", 220, 32);
@@ -50,18 +52,24 @@ function draw() {
   text("Mission status", 2295, 32);
   text("Notes", 2500, 32);
   
+  nameTBD(electronData);
   
-  let pos = 64;
-  for (let i = 0; i < falconB5Data.length; i++) {
+  
 
-    text("B" + falconB5Data[i].name, 0, pos);
-    text(falconB5Data[i].status, 100, pos)
-    text(falconB5Data[i].flights.length, 220, pos);
-    let flightData = falconB5Data[i].flights;
+  noLoop();
+}
+
+function nameTBD(boosterDatas) {
+  let pos = 64;
+  for (let i = 0; i < boosterDatas.length; i++) {
+
+    text("B" + boosterDatas[i].name, 0, pos);
+    text(boosterDatas[i].status, 100, pos)
+    text(boosterDatas[i].flights.length, 220, pos);
+    let flightData = boosterDatas[i].flights;
     for (let j = 0; j < flightData.length; j++) {
       text(j + 1, 350, pos);
       let f = flightData[j];
-      //text(flightData[j].missionName,450,pos);
       text(f.missionName,450,pos);
       text(f.missionDate.date,1010,pos);
       text(f.missionDate.time,1200,pos);
@@ -76,5 +84,5 @@ function draw() {
     pos += 16;
   }
 
-  noLoop();
+
 }
