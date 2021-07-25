@@ -1,7 +1,49 @@
-html, body {
-  margin: 0;
+html,
+body {
+  margin: 5px;
   padding: 0;
 }
+
 canvas {
   display: block;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-left: 10px;
+}
+
+th,
+td,
+tr {
+  border: 1px solid black;
+  width: 12.5%;
+}
+
+.general {
+  border: 1px solid black
+}
+
+.buttonOptions {
+  border: 1px solid red;
+}
+
+.outputs {
+  border: 2px solid green;
+}
+
+.numFlights {
+  border: 1px solid yellow;
+}
+
+.missionInfo {
+  border: 2px solid blue;
+}
+.indivFlight {
+  border: 1px dotted orange;
+  padding: 5px;
+}
+.saveDiv {
+  border : 5px solid purple 
 }

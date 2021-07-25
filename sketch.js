@@ -15,66 +15,169 @@ let jsonData;
 let falconB5Data;
 
 function preload() {
-  let url = 'https://raw.githubusercontent.com/OkayKenji/RocketsRCool/master/launchFile.json'
-  jsonData = loadJSON(url);
+  jsonData = loadJSON("launchfile.json");
 }
 
 function setup() {
   falconB5Data = jsonData.falcons.boosters;
-  let tempHeight = 0;
-  for (let i = 0; i < falconB5Data.length; i++) {
-
-    tempHeight += falconB5Data[i].flights.length;
-  }
-  createCanvas(5000, tempHeight * 32 + falconB5Data.length * 16 + 40);
+  noCanvas();
 }
 
 function draw() {
-  console.log(jsonData);
   background(255);
-  fill(0);
-  strokeWeight(2);
-  textSize(32)
 
-  text("S/N", 0, 32);
-  text("Status", 100, 32)
-  text("# Flights", 220, 32);
-  text("Flights", 350, 32);
-  text("Mission name", 450, 32);
-  text("Mission date", 1010, 32);
-  text("Mission time", 1200, 32);
-  text("Launch location", 1390, 32);
-  text("Recovery type", 1620, 32);
-  text("Recovery name", 1830, 32);
-  text("Recovery status", 2060, 32);
-  text("Mission status", 2295, 32);
-  text("Notes", 2500, 32);
-  
-  
-  let pos = 64;
+  let body = document.getElementsByTagName("body")[0];
+  let tbl = document.createElement("table");
+  let tblBody = document.createElement("tbody");
+
+  //for the first row, the headings
+  let titleRow = document.createElement("tr");
+  let firstRow = ["SN, Status, # of flights", "Flight #", "Mission name", "Mission date", "Mission time", "Launch location", "Recovery type", "Recovery name", "Recovery status", "Mission status", "Notes"];
+  for (let i = 0; i < 11; i++) {
+    let cell = document.createElement("td");
+    let cellInfo = document.createTextNode(firstRow[i]);
+    cell.appendChild(cellInfo);
+    titleRow.appendChild(cell);
+  }
+  tblBody.appendChild(titleRow);
+
+
   for (let i = 0; i < falconB5Data.length; i++) {
-
-    text("B" + falconB5Data[i].name, 0, pos);
-    text(falconB5Data[i].status, 100, pos)
-    text(falconB5Data[i].flights.length, 220, pos);
+    let booster = falconB5Data[i];
     let flightData = falconB5Data[i].flights;
-    for (let j = 0; j < flightData.length; j++) {
-      text(j + 1, 350, pos);
-      let f = flightData[j];
-      //text(flightData[j].missionName,450,pos);
-      text(f.missionName,450,pos);
-      text(f.missionDate.date,1010,pos);
-      text(f.missionDate.time,1200,pos);
-      text(f.launchLoc,1390,pos);
-      text(f.recovery.type,1620,pos);
-      text(f.recovery.name,1830,pos);
-      text(f.recovery.status,2060,pos);
-      text(f.status,2295,pos);
-      text(f.notes,2500,pos);
-      pos += 32;
+
+    //for the row that contains the SN of booster and it's first flight
+    let intialRow = document.createElement("tr");
+    let boosterSNCell = document.createElement("td");
+    let cellInfo = document.createTextNode("B" + booster.name + ", " + booster.status + ", " + booster.flights.length);
+    boosterSNCell.appendChild(cellInfo);
+    boosterSNCell.setAttribute("rowSpan", flightData.length);
+    intialRow.appendChild(boosterSNCell);
+    rowGenerator(intialRow, flightData[0], 1);
+    tblBody.appendChild(intialRow);
+
+    //for subsequent flights
+    if (flightData[1]) {
+      for (let j = 1; j < flightData.length; j++) {
+        let intermediteRow = document.createElement("tr");
+        rowGenerator(intermediteRow, flightData[j], j + 1);
+        tblBody.appendChild(intermediteRow);
+      }
     }
-    pos += 16;
   }
 
+  tbl.appendChild(tblBody);
+  body.appendChild(tbl);
+
   noLoop();
+}
+
+/**
+ * 
+ * @param {*} rowToEdit Row element that will be appeneded
+ * @param {*} flightDetail Object containing info on flight
+ * @param {*} index The flight numbe
+ * @returns 
+ */
+function rowGenerator(rowToEdit, flightDetail, index) {
+  let flightNumData = document.createTextNode(index);
+  let flightNumCell = document.createElement("td");
+  flightNumCell.appendChild(flightNumData);
+  rowToEdit.appendChild(flightNumCell);
+
+  // adds the mission name to the cell, if the link to webcast of mission
+  // is available, the name will link to said webcast.
+  let missionData;
+  if (flightDetail.launchLink) {
+    let link = document.createElement("a");
+    link.setAttribute("href", flightDetail.launchLink);
+    link.innerHTML = flightDetail.missionName;
+    missionData = link;
+  } else {
+    missionData = document.createTextNode(flightDetail.missionName);
+  }
+
+  let missionCell = document.createElement("td");
+  missionCell.appendChild(missionData);
+  rowToEdit.appendChild(missionCell);
+
+
+  let missionDateData = document.createTextNode(flightDetail.missionDate.date);
+  let missionDataCell = document.createElement("td");
+  missionDataCell.appendChild(missionDateData);
+  rowToEdit.appendChild(missionDataCell);
+
+
+  let missionTimeData = document.createTextNode(flightDetail.missionDate.time);
+  let missionTimeCell = document.createElement("td");
+  missionTimeCell.appendChild(missionTimeData);
+  rowToEdit.appendChild(missionTimeCell);
+
+
+  let launchLocData = document.createTextNode(flightDetail.launchLoc);
+  let launchLocCell = document.createElement("td");
+  launchLocCell.appendChild(launchLocData);
+  rowToEdit.appendChild(launchLocCell);
+
+
+  let recTypeData = document.createTextNode(flightDetail.recovery.type);
+  let recTypeCell = document.createElement("td");
+  recTypeCell.appendChild(recTypeData);
+  rowToEdit.appendChild(recTypeCell);
+
+
+  let recNameData = document.createTextNode(flightDetail.recovery.name);
+  let recNameCell = document.createElement("td");
+  recNameCell.appendChild(recNameData);
+  rowToEdit.appendChild(recNameCell);
+
+  // changes color per status
+  let recStatusData = document.createTextNode(flightDetail.recovery.status);
+  let recStatusCell = document.createElement("td");
+  recStatusCell.appendChild(recStatusData);
+  cellColor(recStatusCell,flightDetail.recovery.status);
+  rowToEdit.appendChild(recStatusCell);
+
+  // changes color per status
+  let missionStatusData = document.createTextNode(flightDetail.status);
+  let missionStatusCell = document.createElement("td");
+  missionStatusCell.appendChild(missionStatusData);
+  cellColor(missionStatusCell,flightDetail.status);
+  rowToEdit.appendChild(missionStatusCell);
+
+
+  let notesData = document.createTextNode(flightDetail.notes);
+  let notesCell = document.createElement("td");
+  notesCell.appendChild(notesData);
+  rowToEdit.appendChild(notesCell);
+
+  return rowToEdit;
+}
+
+/**
+ * 
+ * @param {*} cell The cell to preform color change to
+ * @param {*} status Dictates what color it is changed to.
+ */
+function cellColor(cell,status) {
+  if (status == "Successful" || status == "Success" ) {
+    cell.style.background = "	#74C365";
+    cell.style.color =  "#FFFFFF";
+  }
+
+  if (status == "Failure" || status == "Fail") {
+    cell.style.background = "#C51E3A";
+    cell.style.color =  "#FFFFFF";
+  }
+
+  if (status == "Partial failure" || status == "Partial success") {
+    cell.style.background = "#FFD300";
+    cell.style.color =  "#000000";
+  }
+
+  if (status == "Expended") {
+    cell.style.background = "#77B5FE";
+    cell.style.color =  "#FFFFFF";
+  }
+
 }
