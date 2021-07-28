@@ -20,19 +20,49 @@ function draw() {
     noLoop();
 }
 
+function returnCurrJSON() {
+    let lookUpType = document.getElementById("vehicle").value;
+
+    let vehicleJSON;
+
+    switch (lookUpType) {
+        case "spxF9FH":
+            vehicleJSON = jsonData.spacex.boosters;
+            break;
+        case "spxDragon2":
+            vehicleJSON = jsonData.spacex.dragon2;
+            break;
+        case "spxStarship":
+            vehicleJSON = jsonData.spacex.starship;
+            break;
+        case "rklbElectron":
+            vehicleJSON = jsonData.rklb.electron;
+            break;
+        case "boNS":
+            vehicleJSON = jsonData.bo.newShepard;
+            break;
+    }
+    return vehicleJSON;
+}
+
 // helper to get data from json to page
 function onLoadData() {
-    let requestedSN = Number.parseInt(document.getElementById("boosterSN").value);
-    let i = jsonData.falcons.boosters.findIndex(element => element.name == requestedSN);
+    let requestedSN = document.getElementById("boosterSN").value;
+    
+    let vehicleJSON = returnCurrJSON();
+    let i = vehicleJSON.findIndex(element => element.name == requestedSN);
+
     if (i <= -1) {
-        alert("Error! Booster not found!");
+        alert("Error! Booster or capsule not found!");
         return;
     }
-    let currBooster = jsonData.falcons.boosters[i];
-    document.getElementById("boosterStatus").value = currBooster.status;
-    document.getElementById("numFlights").value = currBooster.flights.length;
+
+    let currVehicl = vehicleJSON[i];
+
+    document.getElementById("boosterStatus").value = currVehicl.status;
+    document.getElementById("numFlights").value = currVehicl.flights.length;
     genFlightInputs();
-    fillOtherInputs(currBooster.flights);
+    fillOtherInputs(currVehicl.flights);
 }
 
 /**
@@ -41,7 +71,7 @@ function onLoadData() {
 function onOverrideOrNew() {
     let newObj = {};
     // name, stautus of booster
-    newObj.name = Number.parseInt(document.getElementById("boosterSN").value);
+    newObj.name = document.getElementById("boosterSN").value;
     newObj.status = document.getElementById("boosterStatus").value;
     newObj.flights = [];
 
@@ -62,10 +92,14 @@ function onOverrideOrNew() {
                     newFlightObj.missionDate = {};
                     break;
                 case 3:
-                    newFlightObj.missionDate.date = assigned;
+                    if (assigned.length != 10)
+                        alert("Invalid date! " + newFlightObj.missionName);
+                        newFlightObj.missionDate.date = assigned;
                     break;
                 case 4:
-                    newFlightObj.missionDate.time = assigned;
+                    if (assigned.length != 5)
+                        alert("Invalid time! " + newFlightObj.missionName);
+                        newFlightObj.missionDate.time = assigned;
                     break;
                 case 5:
                     newFlightObj.launchLoc = assigned;
@@ -103,31 +137,23 @@ function onOverrideOrNew() {
     document.getElementById("saveDiv").appendChild(saveButton);
 }
 
+/**
+ * converts input to json object
+ */
 function proccessJSON() {
-    let index = jsonData.falcons.boosters.findIndex(element => element.name == Number.parseInt(document.getElementById("boosterSN").value));
+    let ssssss = returnCurrJSON();
+    let index = ssssss.findIndex(element => element.name == document.getElementById("boosterSN").value);
 
-    if (index <= -1) { // for cases where it's a new booster
-        let i = 0;
-        let tempBoolean = true;
-        while (tempBoolean && (Number.parseInt(document.getElementById("boosterSN").value) > jsonData.falcons.boosters[i].name)) {
-            i++;
-            if (i == jsonData.falcons.boosters.length) {
-                tempBoolean = false;
-            }
-        }
-        if (!tempBoolean) { //if at the end of list
-            jsonData.falcons.boosters.push(univObj);
-        } else {
-            jsonData.falcons.boosters.splice(i, 0, univObj);
-        }
+    if (index <= -1) { // for cases where it's a new 
+        ssssss.push(univObj);
     } else { //modifying a existing booster      
-        jsonData.falcons.boosters[index] = univObj;
+        ssssss[index] = univObj;
     }
 
     let currentDateTime = new Date();
 
-    jsonData.lastUpdate.date = (currentDateTime.getMonth()+1)+"/"+currentDateTime.getDate()+"/"+currentDateTime.getFullYear();
-    jsonData.lastUpdate.time = currentDateTime.getHours()+":"+currentDateTime.getMinutes();
+    jsonData.lastUpdate.date = (currentDateTime.getMonth() + 1) + "/" + currentDateTime.getDate() + "/" + currentDateTime.getFullYear();
+    jsonData.lastUpdate.time = currentDateTime.getHours() + ":" + currentDateTime.getMinutes();
 
     console.log(jsonData);
 }
@@ -191,11 +217,13 @@ function onAddFlight() {
     document.getElementById("numFlights").value = Number.parseInt(document.getElementById("numFlights").value) + 1;
     genFlightInputs();
 
-    let i = jsonData.falcons.boosters.findIndex(element => element.name == Number.parseInt(document.getElementById("boosterSN").value));
+    let currVehicl = returnCurrJSON();
+    let i = currVehicl.findIndex(element => element.name == document.getElementById("boosterSN").value);
     if (i >= 0) {
-        let currBooster = jsonData.falcons.boosters[i];
-        fillOtherInputs(currBooster.flights);
+        let currSpficBooster = currVehicl[i];
+        fillOtherInputs(currSpficBooster.flights);
     }
+
 }
 
 //for when the number of flights is changed by user

@@ -10,29 +10,40 @@
 //  - Blue Origin Rockets
 //  - Starship
 //  - Electron
-//  - Space Shuttles (and maybe the SRBs??)
+//  - Space Shuttles
 let jsonData;
-let falconB5Data;
+let vehicleJSON;
 
 function preload() {
   jsonData = loadJSON("launchfile.json");
 }
 
 function setup() {
-  falconB5Data = jsonData.falcons.boosters;
+  vehicleJSON = jsonData.spacex.boosters;
+
+  document.getElementById("vehicle").addEventListener("change", updateVehicle)
   noCanvas();
 }
 
 function draw() {
+  genTable();
+  noLoop();
+}
+
+/**
+ * Generates the table that displays information on the boosters.
+ */
+function genTable() {
   background(255);
 
-  let body = document.getElementsByTagName("body")[0];
+  let bodyDIV = document.getElementById("table");
+  bodyDIV.innerHTML = ""; //reset
   let tbl = document.createElement("table");
   let tblBody = document.createElement("tbody");
 
   //for the first row, the headings
   let titleRow = document.createElement("tr");
-  let firstRow = ["SN, Status, # of flights", "Flight #", "Mission name", "Mission date", "Mission time", "Launch location", "Recovery type", "Recovery name", "Recovery status", "Mission status", "Notes"];
+  let firstRow = ["SN or Name, Status, # of flights", "Flight #", "Mission name", "Mission date", "Mission time", "Launch location", "Recovery type", "Recovery name", "Recovery status", "Mission status", "Notes"];
   for (let i = 0; i < 11; i++) {
     let cell = document.createElement("td");
     let cellInfo = document.createTextNode(firstRow[i]);
@@ -42,14 +53,14 @@ function draw() {
   tblBody.appendChild(titleRow);
 
 
-  for (let i = 0; i < falconB5Data.length; i++) {
-    let booster = falconB5Data[i];
-    let flightData = falconB5Data[i].flights;
+  for (let i = 0; i < vehicleJSON.length; i++) {
+    let booster = vehicleJSON[i];
+    let flightData = vehicleJSON[i].flights;
 
     //for the row that contains the SN of booster and it's first flight
     let intialRow = document.createElement("tr");
     let boosterSNCell = document.createElement("td");
-    let cellInfo = document.createTextNode("B" + booster.name + ", " + booster.status + ", " + booster.flights.length);
+    let cellInfo = document.createTextNode(booster.name + ", " + booster.status + ", " + booster.flights.length);
     boosterSNCell.appendChild(cellInfo);
     boosterSNCell.setAttribute("rowSpan", flightData.length);
     intialRow.appendChild(boosterSNCell);
@@ -67,16 +78,15 @@ function draw() {
   }
 
   tbl.appendChild(tblBody);
-  body.appendChild(tbl);
-
-  noLoop();
+  bodyDIV.appendChild(tbl);
 }
+
 
 /**
  * 
  * @param {*} rowToEdit Row element that will be appeneded
  * @param {*} flightDetail Object containing info on flight
- * @param {*} index The flight numbe
+ * @param {*} index The flight number
  * @returns 
  */
 function rowGenerator(rowToEdit, flightDetail, index) {
@@ -135,14 +145,14 @@ function rowGenerator(rowToEdit, flightDetail, index) {
   let recStatusData = document.createTextNode(flightDetail.recovery.status);
   let recStatusCell = document.createElement("td");
   recStatusCell.appendChild(recStatusData);
-  cellColor(recStatusCell,flightDetail.recovery.status);
+  cellColor(recStatusCell, flightDetail.recovery.status);
   rowToEdit.appendChild(recStatusCell);
 
   // changes color per status
   let missionStatusData = document.createTextNode(flightDetail.status);
   let missionStatusCell = document.createElement("td");
   missionStatusCell.appendChild(missionStatusData);
-  cellColor(missionStatusCell,flightDetail.status);
+  cellColor(missionStatusCell, flightDetail.status);
   rowToEdit.appendChild(missionStatusCell);
 
 
@@ -159,25 +169,58 @@ function rowGenerator(rowToEdit, flightDetail, index) {
  * @param {*} cell The cell to preform color change to
  * @param {*} status Dictates what color it is changed to.
  */
-function cellColor(cell,status) {
-  if (status == "Successful" || status == "Success" ) {
+function cellColor(cell, status) {
+  if (status == "Successful" || status == "Success") {
     cell.style.background = "	#74C365";
-    cell.style.color =  "#FFFFFF";
+    cell.style.color = "#FFFFFF";
   }
 
-  if (status == "Failure" || status == "Fail") {
+  if (status == "Failure" || status == "Fail" || status == "Lost") {
     cell.style.background = "#C51E3A";
-    cell.style.color =  "#FFFFFF";
+    cell.style.color = "#FFFFFF";
   }
 
   if (status == "Partial failure" || status == "Partial success") {
     cell.style.background = "#FFD300";
-    cell.style.color =  "#000000";
+    cell.style.color = "#000000";
   }
 
   if (status == "Expended") {
     cell.style.background = "#77B5FE";
-    cell.style.color =  "#FFFFFF";
+    cell.style.color = "#FFFFFF";
   }
 
+  if (status == "TBD") {
+    cell.style.background = "#DDEE00";
+    cell.style.color = "#FFFFFF";
+  }
+
+
+}
+
+
+/**
+ * Updatse table per request
+ */
+function updateVehicle() {
+  let userSelect = document.getElementById("vehicle").value;
+  
+  switch (userSelect) {
+    case "spxF9FH":
+        vehicleJSON = jsonData.spacex.boosters;
+        break;
+    case "spxDragon2":
+        vehicleJSON = jsonData.spacex.dragon2;
+        break;
+    case "spxStarship":
+        vehicleJSON = jsonData.spacex.starship;
+        break;
+    case "rklbElectron":
+        vehicleJSON = jsonData.rklb.electron;
+        break;
+    case "boNS":
+        vehicleJSON = jsonData.bo.newShepard;
+        break;
+}
+  genTable();
 }

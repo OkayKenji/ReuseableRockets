@@ -7,13 +7,24 @@
     <script src="main.js"></script>
     <div class="general">
         <div>
-            <label for="boosterSN">Booster SN</label>
+            <label for="boosterSN">Booster SN or name</label>
             <input type="text" id="boosterSN">
         </div>
 
         <div>
             <label for="boosterStatus">Booster status</label>
             <input type="text" id="boosterStatus">
+        </div>
+
+        <div>
+            <label for="vehicle">Select company and rocket</label>
+            <select id="vehicle">
+                <option value="spxF9FH">SpaceX, B5 Falcon 9/Heavy</option>
+                <option value="spxDragon2" >SpaceX, Dragon 2</option>
+                <option value="spxStarship" disabled>SpaceX, Starship, flight only</option>
+                <option value="rklbElectron">Rocket Lab, Electron</option>
+                <option value="boNS" >Blue Origin, New Shepard</option>
+            </select>
         </div>
     </div>
 
@@ -47,7 +58,7 @@
         <h1>json</h1>
         <pre id="sample"></pre>
     </div>
-    
+
     <div id="saveDiv" class="saveDiv"></div>
 </body>
 

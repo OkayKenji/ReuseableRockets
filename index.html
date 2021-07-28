@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-   <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
 
-  </head>
-  <body>
-    <script src="sketch.js"></script>
-    <div id="table"></div>
-  </body>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+  <select id="vehicle">
+    <option value="spxF9FH">SpaceX, B5 Falcon 9/Heavy</option>
+    <option value="spxDragon2">SpaceX, Dragon 2</option>
+    <option value="spxStarship" disabled>SpaceX, Starship, flight only</option>
+    <option value="rklbElectron">Rocket Lab, Electron</option>
+    <option value="boNS" >Blue Origin, New Shepard</option>
+  </select>
+  <div id="table"></div>
+</body>
+
 </html>
