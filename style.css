@@ -1,9 +1,3 @@
-html,
-body {
-  margin: 5px;
-  padding: 0;
-}
-
 canvas {
   display: block;
 }
@@ -11,19 +5,24 @@ canvas {
 table {
   border: 1px solid black;
   border-collapse: collapse;
-  padding-left: 10px;
+  margin-left: 10px;
+}
+button {
+  border: 2px solid gray;
+  background-color: rgb(255, 166, 0);
+  color: white;
 }
 
 th,
 td,
 tr {
   border: 1px solid black;
-  width: 12.5%;
 }
 
 .general {
   border: 1px solid black
 }
+
 
 .buttonOptions {
   border: 1px solid red;
@@ -40,10 +39,53 @@ tr {
 .missionInfo {
   border: 2px solid blue;
 }
+
 .indivFlight {
   border: 1px dotted orange;
   padding: 5px;
 }
+
 .saveDiv {
-  border : 5px solid purple 
+  border: 5px solid purple;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(0px, auto);
+  margin-bottom: 50px;
+  border-top: 2px solid black;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(0px, auto);
+  border: 2px solid orange;
+}
+.specBoxes{
+  width: 500px;
+  height: auto;
+}
+.otherStats{
+  width: 500px;
+  height:  auto;
+}
+.boxes {
+  height: auto;
+  width: 500px;
+}
+.grayed {
+  color: rgba(0, 0, 0, .5);
+}
+canvas {
+  margin: 25px;
+}
+.test {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  overflow-y: hidden 
 }

@@ -32,9 +32,9 @@ function returnCurrJSON() {
         case "spxDragon2":
             vehicleJSON = jsonData.spacex.dragon2;
             break;
-        case "spxStarship":
-            vehicleJSON = jsonData.spacex.starship;
-            break;
+        // case "spxStarship":
+        //     vehicleJSON = jsonData.spacex.starship;
+        //     break;
         case "rklbElectron":
             vehicleJSON = jsonData.rklb.electron;
             break;
@@ -88,7 +88,7 @@ function onOverrideOrNew() {
                     newFlightObj.missionName = assigned;
                     break;
                 case 2:
-                    newFlightObj.falconType = assigned;
+                    newFlightObj.typeVehicle = assigned;
                     newFlightObj.missionDate = {};
                     break;
                 case 3:
@@ -177,7 +177,7 @@ function fillOtherInputs(flightList) {
                     assigned.value = newFlightObj.missionName;
                     break;
                 case 2:
-                    assigned.value = newFlightObj.falconType;
+                    assigned.value = newFlightObj.typeVehicle;
                     break;
                 case 3:
                     assigned.value = newFlightObj.missionDate.date;
@@ -315,79 +315,3 @@ function genFlightInputs() {
 
 
 }
-
-
-//blah
-// function formatOBJ() {
-//     let missName = document.getElementById("missionName").value;
-//     let fType = document.getElementById("falconType").value;
-//     let missDate = document.getElementById("missionDate").value;
-//     let missTime = document.getElementById("missionTime").value;
-//     let lLoc = document.getElementById("launchLoc").value;
-//     let recType = document.getElementById("recoveryType").value;
-//     let recName = document.getElementById("recoveryName").value;
-//     let recStatus = document.getElementById("recoveryStatus").value;
-//     let missionStat = document.getElementById("status").value;
-//     let notes = document.getElementById("notes").value;
-//     let formatedText = "                {\n";
-//     formatedText += "                  missionName : \"" + missName + "\",\n";
-//     formatedText += "                  falconType  : \"" + fType + "\",\n";
-//     formatedText += "                  missionDate : { date : \"" + missDate + "\", time : \"" + missTime +
-//         "\" },\n";
-//     formatedText += "                  launchLoc   : \"" + lLoc + "\",\n";
-//     formatedText += "                  recovery    : { type: \"" + recType + "\", name : \"" + recName +
-//         "\", status : \"" + recStatus + "\" },\n";
-//     formatedText += "                  status      : \"" + missionStat + "\",\n";
-//     formatedText += "                  notes       : \"" + notes + "\"\n";
-//     formatedText += "                },";
-//     list.push(formatedText);
-//     let print = "";
-//     for (let i = 0; i < list.length; i++) {
-//         print += list[i] + "\n";
-//     }
-//     document.getElementById("LEAD").innerHTML = print;
-
-// }
-
-// function formatJSON() {
-//     let missName = document.getElementById("missionName").value;
-//     let fType = document.getElementById("falconType").value;
-//     let missDate = document.getElementById("missionDate").value;
-//     let missTime = document.getElementById("missionTime").value;
-//     let lLoc = document.getElementById("launchLoc").value;
-//     let recType = document.getElementById("recoveryType").value;
-//     let recName = document.getElementById("recoveryName").value;
-//     let recStatus = document.getElementById("recoveryStatus").value;
-//     let missionStat = document.getElementById("status").value;
-//     let notes = document.getElementById("notes").value;
-//     let formatedText = "                {\n";
-//     formatedText += "                  \"missionName\" : \"" + missName + "\",\n";
-//     formatedText += "                  \"falconType\"  : \"" + fType + "\",\n";
-//     formatedText += "                  \"missionDate\" : { \"date\" : \"" + missDate + "\", \"time\" : \"" +
-//         missTime + "\" },\n";
-//     formatedText += "                  \"launchLoc\"   : \"" + lLoc + "\",\n";
-//     formatedText += "                  \"recovery\"    : { \"type\" : \"" + recType + "\", \"name\" : \"" +
-//         recName + "\", \"status\" : \"" + recStatus + "\" },\n";
-//     formatedText += "                  \"status\"      : \"" + missionStat + "\",\n";
-//     formatedText += "                  \"notes\"       : \"" + notes + "\"\n";
-//     formatedText += "                },";
-//     list1.push(formatedText);
-//     let print = "";
-//     for (let i = 0; i < list1.length; i++) {
-//         print += list1[i] + "\n";
-//     }
-//     document.getElementById("LEAD1").innerHTML = print;
-// }
-
-// function reset() {
-//     document.getElementById("missionName").value = "";
-//     document.getElementById("falconType").value = "Falcon 9";
-//     document.getElementById("missionDate").value = "";
-//     document.getElementById("missionTime").value = "";
-//     document.getElementById("launchLoc").value = "";
-//     document.getElementById("recoveryType").value = "";
-//     document.getElementById("recoveryName").value = "";
-//     document.getElementById("recoveryStatus").value = "";
-//     document.getElementById("status").value = "";
-//     document.getElementById("notes").value = "";
-// }

@@ -3,9 +3,9 @@
 
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8" />
-
 </head>
 
 <body>
@@ -16,8 +16,57 @@
     <option value="spxStarship" disabled>SpaceX, Starship, flight only</option>
     <option value="rklbElectron">Rocket Lab, Electron</option>
     <option value="boNS" >Blue Origin, New Shepard</option>
+    <option value="nasaOrbit" disabled>NASA, Shuttle Orbiter</option>
+    <option value="boeStar" disabled>Boeing, Starliner</option>
   </select>
+  <div class="buttons">
+    <p id="graphShow">Currently showing...</p>
+    <button id="showAll">Show all vehicles for this family</button>
+  </div>
+  <div class="wrapper" id="graphA">
+    <div class="boxes">
+      <canvas id="missionSucc"></canvas>
+      <p id="graphAP" class="grayed"></p>
+      <p>Graph generated using <a href="https://www.chartjs.org/">Chart.js</a>. Check at their website.</p>
+    </div>
+    <div class="boxes" id="graphB">
+      <canvas id="recName"></canvas>
+      <p id="graphBP"class="grayed"></p>
+      <p>Graph generated using <a href="https://www.chartjs.org/">Chart.js</a>. Check at their website.</p>
+    </div>
+    <div class="boxes" id="graphC">
+      <canvas id="flightRatios"></canvas>
+      <p id="graphCP" class="grayed"></p>
+      <p>Graph generated using <a href="https://www.chartjs.org/">Chart.js</a>. Check at their website.</p>
+    </div>
+    <div class="boxes" id="graphD">
+      <canvas id="activeInactive"></canvas>
+      <p id="graphDP" class="grayed"></p>
+      <p>Graph generated using <a href="https://www.chartjs.org/">Chart.js</a>. Check at their website.</p>
+    </div>
+    <div class="boxes" id="graphE">
+      <canvas id="launchLoc"></canvas>
+      <p id="graphEP" class="grayed"></p>
+      <p>Graph generated using <a href="https://www.chartjs.org/">Chart.js</a>. Check at their website.</p>
+    </div>
+    <div class="boxes" id="graphF">
+      <canvas id="reusedMissions"></canvas>
+      <p id="graphFP" class="grayed"></p>
+      <p>Graph generated using <a href="https://www.chartjs.org/">Chart.js</a>. Check at their website.</p>
+    </div>
+    <div class="specBoxes" id="graphG">
+      <canvas id="turnAround"></canvas>
+      <p id="graphGP" class="grayed"></p>
+      <p>Graph generated using <a href="https://www.chartjs.org/">Chart.js</a>. Check at their website.</p>
+    </div>
+    <div class="otherStats" id="otherStats">
+    </div>
+  </div>
   <div id="table"></div>
+  <!--<div class="test">
+    <div>test</div>
+  </div>-->
+
 </body>
 
 </html>
