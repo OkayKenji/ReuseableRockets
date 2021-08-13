@@ -1,4 +1,4 @@
-# RocketsRCool
+# ReuseableRockets
 
 Just starting a project that tracks flights of reused boosters.
 Currently tracks
