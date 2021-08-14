@@ -4,12 +4,10 @@
     "time": "20:43"
   },
   "spacex": {
-    "boosters": [
-      {
+    "boosters": [{
         "name": "B1046",
         "status": "Inactive",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Bangabandhu Sat-1",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -82,8 +80,7 @@
       {
         "name": "B1047",
         "status": "Inactive",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Telstar 19V",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -139,8 +136,7 @@
       {
         "name": "B1048",
         "status": "Inactive",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Iridium-7",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -230,8 +226,7 @@
       {
         "name": "B1049",
         "status": "Active",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Telstar 18V",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -389,31 +384,28 @@
       {
         "name": "B1050",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "CRS-16",
-            "typeVehicle": "Falcon 9",
-            "missionDate": {
-              "date": "12/05/2018",
-              "time": "18:16"
-            },
-            "launchLoc": "SLC-40",
-            "recovery": {
-              "type": "Landing zone",
-              "name": "LZ-1",
-              "status": "Failure"
-            },
-            "status": "Successful",
-            "notes": "Grid fin hydraulic pump stalled. Made a soft water landing.",
-            "launchLink": "https://www.youtube.com/watch?v=Esh1jHT9oTA"
-          }
-        ]
+        "flights": [{
+          "missionName": "CRS-16",
+          "typeVehicle": "Falcon 9",
+          "missionDate": {
+            "date": "12/05/2018",
+            "time": "18:16"
+          },
+          "launchLoc": "SLC-40",
+          "recovery": {
+            "type": "Landing zone",
+            "name": "LZ-1",
+            "status": "Failure"
+          },
+          "status": "Successful",
+          "notes": "Grid fin hydraulic pump stalled. Made a soft water landing.",
+          "launchLink": "https://www.youtube.com/watch?v=Esh1jHT9oTA"
+        }]
       },
       {
         "name": "B1051",
         "status": "Active",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Crew Demo-1",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -588,8 +580,7 @@
       {
         "name": "B1052",
         "status": "Active",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Arabsat-6A",
             "typeVehicle": "Falcon Heavy Side Core",
             "missionDate": {
@@ -628,8 +619,7 @@
       {
         "name": "B1053",
         "status": "Active",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Arabsat-6A",
             "typeVehicle": "Falcon Heavy Side Core",
             "missionDate": {
@@ -668,54 +658,49 @@
       {
         "name": "B1054",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "GPS III SV01",
-            "typeVehicle": "Falcon 9",
-            "missionDate": {
-              "date": "12/23/2018",
-              "time": "13:51"
-            },
-            "launchLoc": "SLC-40",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "Per the mission requirements the booster was expended.",
-            "launchLink": "https://www.youtube.com/watch?v=yRiLPoy_Mzc"
-          }
-        ]
+        "flights": [{
+          "missionName": "GPS III SV01",
+          "typeVehicle": "Falcon 9",
+          "missionDate": {
+            "date": "12/23/2018",
+            "time": "13:51"
+          },
+          "launchLoc": "SLC-40",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "Per the mission requirements the booster was expended.",
+          "launchLink": "https://www.youtube.com/watch?v=yRiLPoy_Mzc"
+        }]
       },
       {
         "name": "B1055",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Arabsat-6A",
-            "typeVehicle": "Falcon Heavy",
-            "missionDate": {
-              "date": "04/11/2919",
-              "time": "22:35"
-            },
-            "launchLoc": "LC-39A",
-            "recovery": {
-              "type": "Drone ship",
-              "name": "OCISLY",
-              "status": "Failure"
-            },
-            "status": "Successful",
-            "notes": "After a good landing, center core fell over in the seas because octograbber was not configured for the center core .",
-            "launchLink": "https://www.youtube.com/watch?v=TXMGu2d8c8g"
-          }
-        ]
+        "flights": [{
+          "missionName": "Arabsat-6A",
+          "typeVehicle": "Falcon Heavy",
+          "missionDate": {
+            "date": "04/11/2919",
+            "time": "22:35"
+          },
+          "launchLoc": "LC-39A",
+          "recovery": {
+            "type": "Drone ship",
+            "name": "OCISLY",
+            "status": "Failure"
+          },
+          "status": "Successful",
+          "notes": "After a good landing, center core fell over in the seas because octograbber was not configured for the center core .",
+          "launchLink": "https://www.youtube.com/watch?v=TXMGu2d8c8g"
+        }]
       },
       {
         "name": "B1056",
         "status": "Inactive",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "CRS-17",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -788,31 +773,28 @@
       {
         "name": "B1057",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "STP-2",
-            "typeVehicle": "Falcon Heavy",
-            "missionDate": {
-              "date": "06/25/2019",
-              "time": "06:30"
-            },
-            "launchLoc": "LC-39A",
-            "recovery": {
-              "type": "Drone ship",
-              "name": "OCISLY",
-              "status": "Failure"
-            },
-            "status": "Successful",
-            "notes": "High entry forces and heat caused the TVC in the center engine to fail causing the landing to fail.",
-            "launchLink": "https://www.youtube.com/watch?v=WxH4CAlhtiQ"
-          }
-        ]
+        "flights": [{
+          "missionName": "STP-2",
+          "typeVehicle": "Falcon Heavy",
+          "missionDate": {
+            "date": "06/25/2019",
+            "time": "06:30"
+          },
+          "launchLoc": "LC-39A",
+          "recovery": {
+            "type": "Drone ship",
+            "name": "OCISLY",
+            "status": "Failure"
+          },
+          "status": "Successful",
+          "notes": "High entry forces and heat caused the TVC in the center engine to fail causing the landing to fail.",
+          "launchLink": "https://www.youtube.com/watch?v=WxH4CAlhtiQ"
+        }]
       },
       {
         "name": "B1058",
         "status": "Active",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Crew Demo-2",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -953,8 +935,7 @@
       {
         "name": "B1059",
         "status": "Inactive",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "CRS-19",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -1061,8 +1042,7 @@
       {
         "name": "B1060",
         "status": "Active",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "GPS III SV03",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -1203,8 +1183,7 @@
       {
         "name": "B1061",
         "status": "Active",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Crew-1",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -1260,8 +1239,7 @@
       {
         "name": "B1062",
         "status": "Active",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "GPS III SV04",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -1300,8 +1278,7 @@
       {
         "name": "B1063",
         "status": "Active",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Sentinel-6",
             "typeVehicle": "Falcon 9",
             "missionDate": {
@@ -1340,79 +1317,71 @@
       {
         "name": "B1067",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "CRS-22",
-            "typeVehicle": "Falcon 9",
-            "missionDate": {
-              "date": "06/03/2021",
-              "time": "17:29"
-            },
-            "launchLoc": "LC-39A",
-            "recovery": {
-              "type": "Drone ship",
-              "name": "OCISLY",
-              "status": "Successful"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=QXf9mRWbXDM"
-          }
-        ]
+        "flights": [{
+          "missionName": "CRS-22",
+          "typeVehicle": "Falcon 9",
+          "missionDate": {
+            "date": "06/03/2021",
+            "time": "17:29"
+          },
+          "launchLoc": "LC-39A",
+          "recovery": {
+            "type": "Drone ship",
+            "name": "OCISLY",
+            "status": "Successful"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=QXf9mRWbXDM"
+        }]
       }
     ],
-    "dragon2": [
-      {
+    "dragon2": [{
         "name": "C204",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Crew Demo-1",
-            "typeVehicle": "Crew Dragon",
-            "missionDate": {
-              "date": "03/02/2019",
-              "time": "07:49"
-            },
-            "launchLoc": "LC-39A",
-            "recovery": {
-              "type": "Orbital re-entry, ocean splashdown",
-              "name": "Atlantic Ocean",
-              "status": "Successful"
-            },
-            "status": "Successful",
-            "notes": "Uncrewed orbital test flight of Dragon 2. Capsule was destroyed in subsequent testing due to major design flaws.",
-            "launchLink": ""
-          }
-        ]
+        "flights": [{
+          "missionName": "Crew Demo-1",
+          "typeVehicle": "Crew Dragon",
+          "missionDate": {
+            "date": "03/02/2019",
+            "time": "07:49"
+          },
+          "launchLoc": "LC-39A",
+          "recovery": {
+            "type": "Orbital re-entry, ocean splashdown",
+            "name": "Atlantic Ocean",
+            "status": "Successful"
+          },
+          "status": "Successful",
+          "notes": "Uncrewed orbital test flight of Dragon 2. Capsule was destroyed in subsequent testing due to major design flaws.",
+          "launchLink": ""
+        }]
       },
       {
         "name": "C205",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Dragon Launch Escape Demonstration",
-            "typeVehicle": "Crew Dragon",
-            "missionDate": {
-              "date": "01/19/2020",
-              "time": "15:30"
-            },
-            "launchLoc": "LC-39A",
-            "recovery": {
-              "type": "Ocean splashdown",
-              "name": "Atlantic ocean",
-              "status": "Successful"
-            },
-            "status": "Successful",
-            "notes": "Dragon successfully escaped from Falcon 9.",
-            "launchLink": ""
-          }
-        ]
+        "flights": [{
+          "missionName": "Dragon Launch Escape Demonstration",
+          "typeVehicle": "Crew Dragon",
+          "missionDate": {
+            "date": "01/19/2020",
+            "time": "15:30"
+          },
+          "launchLoc": "LC-39A",
+          "recovery": {
+            "type": "Ocean splashdown",
+            "name": "Atlantic ocean",
+            "status": "Successful"
+          },
+          "status": "Successful",
+          "notes": "Dragon successfully escaped from Falcon 9.",
+          "launchLink": ""
+        }]
       },
       {
         "name": "C206 \"Endeavour\"",
         "status": "Active",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Crew Demo-2",
             "typeVehicle": "Crew Dragon",
             "missionDate": {
@@ -1451,591 +1420,538 @@
       {
         "name": "C207 \"Resilience\"",
         "status": "Active",
-        "flights": [
-          {
-            "missionName": "Crew-1",
-            "typeVehicle": "Crew Dragon",
-            "missionDate": {
-              "date": "11/16/2020",
-              "time": "00:27"
-            },
-            "launchLoc": "LC-39A",
-            "recovery": {
-              "type": "Orbital re-entry, ocean splashdown",
-              "name": "Gulf of Mexico",
-              "status": "Successful"
-            },
-            "status": "Successful",
-            "notes": "First operational flight. Successfully carried Mike Hopkins, Victor Glover, Shannon Walker, and Sochi Noguchi.",
-            "launchLink": ""
-          }
-        ]
+        "flights": [{
+          "missionName": "Crew-1",
+          "typeVehicle": "Crew Dragon",
+          "missionDate": {
+            "date": "11/16/2020",
+            "time": "00:27"
+          },
+          "launchLoc": "LC-39A",
+          "recovery": {
+            "type": "Orbital re-entry, ocean splashdown",
+            "name": "Gulf of Mexico",
+            "status": "Successful"
+          },
+          "status": "Successful",
+          "notes": "First operational flight. Successfully carried Mike Hopkins, Victor Glover, Shannon Walker, and Sochi Noguchi.",
+          "launchLink": ""
+        }]
       },
       {
         "name": "C208",
         "status": "Active",
-        "flights": [
-          {
-            "missionName": "CRS-21",
-            "typeVehicle": "Cargo Dragon",
-            "missionDate": {
-              "date": "12/06/2020",
-              "time": "16:17"
-            },
-            "launchLoc": "LC-39A",
-            "recovery": {
-              "type": "Orbital re-entry, ocean splashdown",
-              "name": "Gulf of Mexico",
-              "status": "Successful"
-            },
-            "status": "Successful",
-            "notes": "First Dragon 2 cargo mission,",
-            "launchLink": ""
-          }
-        ]
+        "flights": [{
+          "missionName": "CRS-21",
+          "typeVehicle": "Cargo Dragon",
+          "missionDate": {
+            "date": "12/06/2020",
+            "time": "16:17"
+          },
+          "launchLoc": "LC-39A",
+          "recovery": {
+            "type": "Orbital re-entry, ocean splashdown",
+            "name": "Gulf of Mexico",
+            "status": "Successful"
+          },
+          "status": "Successful",
+          "notes": "First Dragon 2 cargo mission,",
+          "launchLink": ""
+        }]
       },
       {
         "name": "C209",
         "status": "Active",
-        "flights": [
-          {
-            "missionName": "CRS-22",
-            "typeVehicle": "Cargo Dragon",
-            "missionDate": {
-              "date": "06/03/2021",
-              "time": "17:29"
-            },
-            "launchLoc": "LC-39A",
-            "recovery": {
-              "type": "Orbital re-entry, ocean splashdown",
-              "name": "Gulf of Mexico",
-              "status": "Successful"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": ""
-          }
-        ]
+        "flights": [{
+          "missionName": "CRS-22",
+          "typeVehicle": "Cargo Dragon",
+          "missionDate": {
+            "date": "06/03/2021",
+            "time": "17:29"
+          },
+          "launchLoc": "LC-39A",
+          "recovery": {
+            "type": "Orbital re-entry, ocean splashdown",
+            "name": "Gulf of Mexico",
+            "status": "Successful"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": ""
+        }]
       }
     ]
   },
   "rklb": {
-    "electron": [
-      {
+    "electron": [{
         "name": "It's a Test",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "It's a Test",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "05/25/2017",
-              "time": "04:20"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Failure",
-            "notes": "First stage flight preceded nominally.  Second stage was terminated by range due to telemetry loss. Loss of telemetry was due to a ground side issue, and not Electron.",
-            "launchLink": "https://www.youtube.com/watch?v=VA_8HPsua0c"
-          }
-        ]
+        "flights": [{
+          "missionName": "It's a Test",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "05/25/2017",
+            "time": "04:20"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Failure",
+          "notes": "First stage flight preceded nominally.  Second stage was terminated by range due to telemetry loss. Loss of telemetry was due to a ground side issue, and not Electron.",
+          "launchLink": "https://www.youtube.com/watch?v=VA_8HPsua0c"
+        }]
       },
       {
         "name": "Still Testing",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Still Testing",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "01/21/2018",
-              "time": "01:43"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "First successful flight. ",
-            "launchLink": "https://www.youtube.com/watch?v=eg5234BOED8"
-          }
-        ]
+        "flights": [{
+          "missionName": "Still Testing",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "01/21/2018",
+            "time": "01:43"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "First successful flight. ",
+          "launchLink": "https://www.youtube.com/watch?v=eg5234BOED8"
+        }]
       },
       {
         "name": "It's Business Time",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "It's Business Time",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "11/11/2018",
-              "time": "03:50"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=sPwMuUxSrcA"
-          }
-        ]
+        "flights": [{
+          "missionName": "It's Business Time",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "11/11/2018",
+            "time": "03:50"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=sPwMuUxSrcA"
+        }]
       },
       {
         "name": "This One's for Pickering",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "NASA ELaNa-19",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "12/16/2018",
-              "time": "06:33"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": " ",
-            "launchLink": "https://www.youtube.com/watch?v=F7Kr3664hJs"
-          }
-        ]
+        "flights": [{
+          "missionName": "NASA ELaNa-19",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "12/16/2018",
+            "time": "06:33"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": " ",
+          "launchLink": "https://www.youtube.com/watch?v=F7Kr3664hJs"
+        }]
       },
       {
         "name": "Two Thumbs Up",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "DARPA R3D2",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "03/28/2019",
-              "time": "23:27"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=TGhlWMJtDEI"
-          }
-        ]
+        "flights": [{
+          "missionName": "DARPA R3D2",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "03/28/2019",
+            "time": "23:27"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=TGhlWMJtDEI"
+        }]
       },
       {
         "name": "That's a Funny Looking Cactus",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "STP-27RD",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "05/05/2019",
-              "time": "06:00"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=ahVDVWq_Ei4"
-          }
-        ]
+        "flights": [{
+          "missionName": "STP-27RD",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "05/05/2019",
+            "time": "06:00"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=ahVDVWq_Ei4"
+        }]
       },
       {
         "name": "Make it Rain",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Make it Rain",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "06/29/2019",
-              "time": "04:30"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=idKCy8LdyKo"
-          }
-        ]
+        "flights": [{
+          "missionName": "Make it Rain",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "06/29/2019",
+            "time": "04:30"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=idKCy8LdyKo"
+        }]
       },
       {
         "name": "Look Ma, No Hands",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Look Ma, No Hands",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "08/19/2019",
-              "time": "12:12"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "Carried advanced instrumentation to measure the re-entry regimes.",
-            "launchLink": "https://www.youtube.com/watch?v=SNuauG1Gvr8"
-          }
-        ]
+        "flights": [{
+          "missionName": "Look Ma, No Hands",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "08/19/2019",
+            "time": "12:12"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "Carried advanced instrumentation to measure the re-entry regimes.",
+          "launchLink": "https://www.youtube.com/watch?v=SNuauG1Gvr8"
+        }]
       },
       {
         "name": "As The Crow Flies",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "As The Crow Flies",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "10/17/2019",
-              "time": "01:22"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=gI_Ng4SGyUY"
-          }
-        ]
+        "flights": [{
+          "missionName": "As The Crow Flies",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "10/17/2019",
+            "time": "01:22"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=gI_Ng4SGyUY"
+        }]
       },
       {
         "name": "Running Out of Fingers",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Running Out of Fingers",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "12/06/2019",
-              "time": "08:18"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "Guided Re-entry",
-              "name": "N/A",
-              "status": "Successful"
-            },
-            "status": "Successful",
-            "notes": "First guided re-entry of booster using RCS to reoriented the vehicle engine first. Heat shield collapse was noted. First fully AFTS.",
-            "launchLink": "https://www.youtube.com/watch?v=QK9mQdar5_w"
-          }
-        ]
+        "flights": [{
+          "missionName": "Running Out of Fingers",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "12/06/2019",
+            "time": "08:18"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "Guided Re-entry",
+            "name": "N/A",
+            "status": "Successful"
+          },
+          "status": "Successful",
+          "notes": "First guided re-entry of booster using RCS to reoriented the vehicle engine first. Heat shield collapse was noted. First fully AFTS.",
+          "launchLink": "https://www.youtube.com/watch?v=QK9mQdar5_w"
+        }]
       },
       {
         "name": "Birds of a Feather",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Birds of a Feather",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "01/31/2020",
-              "time": "15:56"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "Guided Re-entry",
-              "name": "N/A",
-              "status": "Successful"
-            },
-            "status": "Successful",
-            "notes": "Second guided re-entry of booster. Both booster crashed into the ocean,",
-            "launchLink": "https://www.youtube.com/watch?v=af-PplDIkbc"
-          }
-        ]
+        "flights": [{
+          "missionName": "Birds of a Feather",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "01/31/2020",
+            "time": "15:56"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "Guided Re-entry",
+            "name": "N/A",
+            "status": "Successful"
+          },
+          "status": "Successful",
+          "notes": "Second guided re-entry of booster. Both booster crashed into the ocean,",
+          "launchLink": "https://www.youtube.com/watch?v=af-PplDIkbc"
+        }]
       },
       {
         "name": "Don't Stop Me Now",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Don't Stop Me Now",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "06/13/2020",
-              "time": "05:12"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=VRfm6RGVHf8"
-          }
-        ]
+        "flights": [{
+          "missionName": "Don't Stop Me Now",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "06/13/2020",
+            "time": "05:12"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=VRfm6RGVHf8"
+        }]
       },
       {
         "name": "Pics or it Didn't Happen",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Pics or it Didn't Happen",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "07/04/2020",
-              "time": "21:19"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Failure",
-            "notes": "First stage preformed nominally. Intermittently secure wiring caused heating and potting compound around it to melt. Subsequently disconnecting the wire, causing engine turbopumps to shutdown.",
-            "launchLink": "https://www.youtube.com/watch?v=5ZcZoDFYjXc"
-          }
-        ]
+        "flights": [{
+          "missionName": "Pics or it Didn't Happen",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "07/04/2020",
+            "time": "21:19"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Failure",
+          "notes": "First stage preformed nominally. Intermittently secure wiring caused heating and potting compound around it to melt. Subsequently disconnecting the wire, causing engine turbopumps to shutdown.",
+          "launchLink": "https://www.youtube.com/watch?v=5ZcZoDFYjXc"
+        }]
       },
       {
         "name": "I Can't Believe Its not Optical",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "I Can't Believe Its not Optical",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "08/31/2020",
-              "time": "03:05"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "First launch of Photon bus.",
-            "launchLink": "https://www.youtube.com/watch?v=FPIhI5mRDRI"
-          }
-        ]
+        "flights": [{
+          "missionName": "I Can't Believe Its not Optical",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "08/31/2020",
+            "time": "03:05"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "First launch of Photon bus.",
+          "launchLink": "https://www.youtube.com/watch?v=FPIhI5mRDRI"
+        }]
       },
       {
         "name": "In Focus",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "In Focus",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "10/28/2020",
-              "time": "21:21"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=axXm-z2NzW8"
-          }
-        ]
+        "flights": [{
+          "missionName": "In Focus",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "10/28/2020",
+            "time": "21:21"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=axXm-z2NzW8"
+        }]
       },
       {
         "name": "Return To Sender",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Return To Sender",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "11/20/2020",
-              "time": "02:20"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "Parachute ocean touchdown",
-              "name": "N/A",
-              "status": "Successful"
-            },
-            "status": "Successful",
-            "notes": "Guided re-entry followed by parachute deploy. Booster was successfully recovered from ocean. ",
-            "launchLink": "https://www.youtube.com/watch?v=eZGI_lHGltA"
-          }
-        ]
+        "flights": [{
+          "missionName": "Return To Sender",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "11/20/2020",
+            "time": "02:20"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "Parachute ocean touchdown",
+            "name": "N/A",
+            "status": "Successful"
+          },
+          "status": "Successful",
+          "notes": "Guided re-entry followed by parachute deploy. Booster was successfully recovered from ocean. ",
+          "launchLink": "https://www.youtube.com/watch?v=eZGI_lHGltA"
+        }]
       },
       {
         "name": "The Owl's Night Begins",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "The Owl's Night Begins",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "12/15/2020",
-              "time": "10:09"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=AmbjFv3wa68"
-          }
-        ]
+        "flights": [{
+          "missionName": "The Owl's Night Begins",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "12/15/2020",
+            "time": "10:09"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=AmbjFv3wa68"
+        }]
       },
       {
         "name": "Another One Leaves The Crust",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Another One Leaves The Crust",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "01/20/2021",
-              "time": "07:26"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=NQyNuF-Du7c"
-          }
-        ]
+        "flights": [{
+          "missionName": "Another One Leaves The Crust",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "01/20/2021",
+            "time": "07:26"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=NQyNuF-Du7c"
+        }]
       },
       {
         "name": "They Go Up So Fast",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "They Go Up So Fast",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "03/22/2021",
-              "time": "22:30"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=u5wmrGriVX0"
-          }
-        ]
+        "flights": [{
+          "missionName": "They Go Up So Fast",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "03/22/2021",
+            "time": "22:30"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=u5wmrGriVX0"
+        }]
       },
       {
         "name": "Running Out Of Toes",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "Running Out Of Toes",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "05/15/2021",
-              "time": "11:11"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "Parachute ocean touchdown",
-              "name": "N/A",
-              "status": "Successful"
-            },
-            "status": "Failure",
-            "notes": "Reused some components from \"Return To Sender\" mission. Nominal first stage assent and recovery. Second stage engine had a igniter issue causing single corruption making TVC to deviate. Engine computer reacted to deviation by commanding zero pump speed - leading to engine shutdown.",
-            "launchLink": "https://www.youtube.com/watch?v=Zw3sIUyfSfc"
-          }
-        ]
+        "flights": [{
+          "missionName": "Running Out Of Toes",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "05/15/2021",
+            "time": "11:11"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "Parachute ocean touchdown",
+            "name": "N/A",
+            "status": "Successful"
+          },
+          "status": "Failure",
+          "notes": "Reused some components from \"Return To Sender\" mission. Nominal first stage assent and recovery. Second stage engine had a igniter issue causing single corruption making TVC to deviate. Engine computer reacted to deviation by commanding zero pump speed - leading to engine shutdown.",
+          "launchLink": "https://www.youtube.com/watch?v=Zw3sIUyfSfc"
+        }]
       },
       {
         "name": "It's A Little Chile Up Here",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "It's A Little Chile Up Here",
-            "typeVehicle": "Electron",
-            "missionDate": {
-              "date": "07/29/2021",
-              "time": "06:00"
-            },
-            "launchLoc": "LC-1A",
-            "recovery": {
-              "type": "No attempt",
-              "name": "N/A",
-              "status": "Expended"
-            },
-            "status": "Successful",
-            "notes": "",
-            "launchLink": "https://www.youtube.com/watch?v=XEAKezzYi4Q"
-          }
-        ]
+        "flights": [{
+          "missionName": "It's A Little Chile Up Here",
+          "typeVehicle": "Electron",
+          "missionDate": {
+            "date": "07/29/2021",
+            "time": "06:00"
+          },
+          "launchLoc": "LC-1A",
+          "recovery": {
+            "type": "No attempt",
+            "name": "N/A",
+            "status": "Expended"
+          },
+          "status": "Successful",
+          "notes": "",
+          "launchLink": "https://www.youtube.com/watch?v=XEAKezzYi4Q"
+        }]
       }
     ]
   },
   "bo": {
-    "newShepard": [
-      {
+    "newShepard": [{
         "name": "NS1",
         "status": "Inactive",
-        "flights": [
-          {
-            "missionName": "NS-1",
-            "typeVehicle": "New Shepard",
-            "missionDate": {
-              "date": "04/29/2015",
-              "time" : ""
-            },
-            "launchLoc": "Corn Ranch",
-            "recovery": {
-              "type": "Ground pad",
-              "name": "Corn Ranch",
-              "status": "Failure"
-            },
-            "status": "Successful",
-            "notes": "Capsule landed safely. Booster crashed.",
-            "launchLink": "https://www.youtube.com/watch?v=rEdk-XNoZpA"
-          }
-        ]
+        "flights": [{
+          "missionName": "NS-1",
+          "typeVehicle": "New Shepard",
+          "missionDate": {
+            "date": "04/29/2015",
+            "time": ""
+          },
+          "launchLoc": "Corn Ranch",
+          "recovery": {
+            "type": "Ground pad",
+            "name": "Corn Ranch",
+            "status": "Failure"
+          },
+          "status": "Successful",
+          "notes": "Capsule landed safely. Booster crashed.",
+          "launchLink": "https://www.youtube.com/watch?v=rEdk-XNoZpA"
+        }]
       },
       {
         "name": "NS2",
         "status": "Inactive",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Flight 2",
             "typeVehicle": "New Shepard",
             "missionDate": {
@@ -2125,8 +2041,7 @@
       {
         "name": "NS3",
         "status": "Inactive",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Flight 7",
             "typeVehicle": "New Shepard",
             "missionDate": {
@@ -2250,8 +2165,7 @@
       {
         "name": "NS4",
         "status": "Active",
-        "flights": [
-          {
+        "flights": [{
             "missionName": "Flight 14",
             "typeVehicle": "New Shepard",
             "missionDate": {

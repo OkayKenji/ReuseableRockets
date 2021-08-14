@@ -12,13 +12,10 @@ Plans to track
  - Space shuttle
  - Starliner 
 
-All data as of 07/25/2021. Data should be updated every mission; or at least every month. 
-v1.1 - New Graphs, and more vehicles tracked!
-
 Credits (Code)
  - https://www.chartjs.org/
  - https://developer.mozilla.org/en-US/docs/Web
- - https://p5js.org/
+ - https://p5js.org/ (v1.1 and before)
 
 Data
  - https://en.wikipedia.org/
@@ -27,3 +24,6 @@ Data
  - https://spaceflightnow.com/
  - https://www.theverge.com
  - https://www.spacex.com/ and YouTube Webcasts
+
+All data as of 08/13/2021. Data should be updated every mission; or at least every month. 
+v1.2 - Revamped backside, removed formatter from public access
