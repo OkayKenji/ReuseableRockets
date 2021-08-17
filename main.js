@@ -5,13 +5,7 @@
  */
 let jsonData;
 let vehicleJSON;
-let graphA;
-let graphB;
-let graphC;
-let graphD;
-let graphE;
-let graphF;
-let graphG;
+let graphA, graphB, graphC, graphD, graphE, graphF, graphG;
 
 aysncStartProgram();
 
