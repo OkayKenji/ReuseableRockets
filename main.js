@@ -11,7 +11,13 @@ aysncStartProgram();
 
 async function aysncStartProgram() {
   const response = await fetch('database.json');
-  jsonData = await response.json();
+  jsonData = await response.json().catch((error) => {
+    document.getElementById("graphShow").textContent = "Currently showing...None because there's been an error!";
+    throw {
+      error: "Error",
+      msg: "Missing data"
+    };
+  });
 
   document.getElementById("vehicle").addEventListener("change", updateVehicle);
   document.getElementById("showAll").addEventListener("click", updateVehicle)
@@ -45,7 +51,7 @@ async function aysncStartProgram() {
         paragraphText = "All New Shepard Boosters"
         break;
     }
-    document.getElementById("graphShow").innerText = "Currently showing..." + paragraphText;
+    document.getElementById("graphShow").textContent = `Currently showing...${paragraphText} (click on cell containing name of vehicle to update graphs below)`;
     generateTable();
     generateStatisticsHelper();
   }
@@ -82,7 +88,7 @@ async function aysncStartProgram() {
       // Row that contains vehicle name/sn etc. as well as the first flight
       let intialRow = document.createElement("tr");
       let boosterNameCell = document.createElement("td");
-      let cellText = document.createTextNode(eachVehicle.name + ", " + eachVehicle.status + ", " + flightData.length);
+      let cellText = document.createTextNode(`${eachVehicle.name}, ${eachVehicle.status}, ${flightData.length}`);
       boosterNameCell.appendChild(cellText);
       boosterNameCell.setAttribute("rowSpan", flightData.length);
       boosterNameCell.addEventListener("click", displayBoosterInfo)
@@ -123,7 +129,7 @@ async function aysncStartProgram() {
     if (flightDetail.launchLink) {
       let link = document.createElement("a");
       link.setAttribute("href", flightDetail.launchLink);
-      link.innerHTML = flightDetail.missionName;
+      link.textContent = flightDetail.missionName;
       missionData = link;
     } else {
       missionData = document.createTextNode(flightDetail.missionName);
@@ -289,7 +295,7 @@ async function aysncStartProgram() {
     selectionSort(turnAroundArr, respectiveArr);
 
     let newFlightVReused = {
-      labelList: ["New booster missions", "Re-used booster missions"],
+      labelList: ["New vehicle missions", "Re-used vehicle missions"],
       dataList: [totalFlights - turnAroundArr.length, turnAroundArr.length]
     }
     chartGenerator(newFlightVReused, "Reused v. New");
@@ -420,7 +426,7 @@ async function aysncStartProgram() {
         if (graphC) {
           graphC.destroy();
         }
-        document.getElementById("graphCP").innerText = "";
+        document.getElementById("graphCP").textContent = "";
         document.getElementById("graphC").style = "background-color: rgb(255,255,255);"
         graphC = new Chart(
           document.getElementById('flightRatios'),
@@ -431,7 +437,7 @@ async function aysncStartProgram() {
         if (graphD) {
           graphD.destroy();
         }
-        document.getElementById("graphDP").innerText = "";
+        document.getElementById("graphDP").textContent = "";
         document.getElementById("graphD").style = "background-color: rgb(255,255,255);"
         graphD = new Chart(
           document.getElementById('activeInactive'),
@@ -451,7 +457,7 @@ async function aysncStartProgram() {
         if (graphF) {
           graphF.destroy();
         }
-        document.getElementById("graphFP").innerText = "";
+        document.getElementById("graphFP").textContent = "";
         document.getElementById("graphF").style = "background-color: rgb(255,255,255);"
         graphF = new Chart(
           document.getElementById('reusedMissions'),
@@ -520,25 +526,19 @@ async function aysncStartProgram() {
    * @param {*} totalFlights Total number of flights
    */
   function textStats(turnAroundArr, respectiveArr, totalMissions, totalFlights) {
-    let textStats = document.getElementsByClassName("otherStats")[0];
-    textStats.innerHTML = "";
-    let text = "<b>Turn around stats.:</b><br>";
     if (turnAroundArr.length > 0) {
-      text += "Median (\"typical\"): " + Math.trunc(turnAroundArr[Math.trunc(turnAroundArr.length / 2)] / 86400000);
-      text += "<br>Average: " + Math.trunc(returnAvg(turnAroundArr) / 86400000);
-      text += "<br>Fastest turn around of " + Math.trunc(turnAroundArr[0] / 86400000) + " days between launches of " + respectiveArr[0]; //fast 
-      text += "<br>Slowest turn around of " + Math.trunc(turnAroundArr[turnAroundArr.length - 1] / 86400000) + " days between launches of " + respectiveArr[respectiveArr.length - 1]; //slowest
+      document.getElementById("median").textContent = Math.trunc(turnAroundArr[Math.trunc(turnAroundArr.length / 2)] / 86400000);
+      document.getElementById("average").textContent =  Math.trunc(returnAvg(turnAroundArr) / 86400000);
+      document.getElementById("fastTurnaround").textContent =  `${Math.trunc(turnAroundArr[0] / 86400000)} days between launches of ${respectiveArr[0]}`; //fast 
+      document.getElementById("slowestTurnaround").textContent = `${Math.trunc(turnAroundArr[turnAroundArr.length - 1] / 86400000)} days between launches of ${respectiveArr[respectiveArr.length - 1]}`; //slowest
     } else {
-      text += "Median (\"typical\"): N/A";
-      text += "<br>Average: N/A";
-      text += "<br>Fastest turn around of...N/A";
-      text += "<br>Slowest turn around of...N/A";
+      document.getElementById("median").textContent = "N/A";
+      document.getElementById("average").textContent =  "N/A";
+      document.getElementById("fastTurnaround").textContent =  "...N/A";
+      document.getElementById("slowestTurnaround").textContent = "...N/A";
     }
-    text += "<br>Total missions to date: " + totalMissions;
-    text += "<br>Total flights to date: " + totalFlights;
-    let para = document.createElement("p");
-    para.innerHTML = text;
-    textStats.appendChild(para);
+    document.getElementById("totMiss").textContent =  totalMissions;
+    document.getElementById("totFlights").textContent =  totalFlights;
   }
 
   /**
@@ -585,9 +585,9 @@ async function aysncStartProgram() {
       bottom: 0,
       behavior: 'smooth'
     });
-    let clickedCell = this.innerHTML;
+    let clickedCell = this.textContent;
     let requestedVehicele = vehicleJSON.find(element => element.name == clickedCell.substring(0, clickedCell.indexOf(',')));
-    document.getElementById("graphShow").innerHTML = "Currently showing..." + clickedCell.substring(0, clickedCell.indexOf(','));
+    document.getElementById("graphShow").textContent = `Currently showing...${clickedCell.substring(0, clickedCell.indexOf(','))}`;
 
     let overallSuccesObj = {
       labelList: [],
@@ -631,20 +631,20 @@ async function aysncStartProgram() {
     textStats(turnAroundArr, respectiveArr, requestedVehicele.flights.length, requestedVehicele.flights.length);
 
     let notAvailable = document.createElement("p");
-    notAvailable.innerText = "Graph unavailable for specific vehicles, only the whole family."
+    notAvailable.textContent = "Graph unavailable for specific vehicles, only the whole family."
     if (graphC) {
       graphC.destroy();
-      document.getElementById("graphCP").innerText = "Graph unavailable for specific vehicles, only the whole family.";
+      document.getElementById("graphCP").textContent = "Graph unavailable for specific vehicles, only the whole family.";
       document.getElementById("graphC").style = "background-color: rgba(0,0,0,0.05);"
     }
     if (graphD) {
       graphD.destroy();
-      document.getElementById("graphDP").innerText = "Graph unavailable for specific vehicles, only the whole family.";
+      document.getElementById("graphDP").textContent = "Graph unavailable for specific vehicles, only the whole family.";
       document.getElementById("graphD").style = "background-color: rgba(0,0,0,0.05);"
     }
     if (graphF) {
       graphF.destroy();
-      document.getElementById("graphFP").innerText = "Graph unavailable for specific vehicles, only the whole family.";
+      document.getElementById("graphFP").textContent = "Graph unavailable for specific vehicles, only the whole family.";
       document.getElementById("graphF").style = "background-color: rgba(0,0,0,0.05);"
     }
 
