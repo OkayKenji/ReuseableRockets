@@ -502,7 +502,7 @@ async function aysncStartProgram() {
         plugins: {
           title: {
             display: true,
-            text: "Turn around times"
+            text: "Turnaround times"
           }
         }
       }
