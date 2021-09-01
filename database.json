@@ -1,7 +1,7 @@
 {
   "lastUpdate": {
-    "date": "08/16/2021",
-    "time": "23:42:58"
+    "date": "09/01/2021",
+    "time": "22:47:08"
   },
   "spacex": {
     "boosters": [
@@ -57,7 +57,7 @@
               "status": "Successful"
             },
             "status": "Successful",
-            "notes": "First Falcon booster to fly from three diffrent launch pads.",
+            "notes": "First Falcon booster to fly from three different launch pads.",
             "launchLink": "https://www.youtube.com/watch?v=Wq8kS6UoOrQ"
           },
           {
@@ -1254,6 +1254,23 @@
             "status": "Successful",
             "notes": "",
             "launchLink": "https://www.youtube.com/watch?v=bgtDRR2F2wA"
+          },
+          {
+            "missionName": "CRS-23",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "08/29/2021",
+              "time": "07:14"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "ASoG",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "First landing on A Shortfall of Gravitas.",
+            "launchLink": "https://www.youtube.com/watch?v=x-KiDqxAMU0"
           }
         ]
       },
@@ -1490,6 +1507,23 @@
             },
             "status": "Successful",
             "notes": "First Dragon 2 cargo mission,",
+            "launchLink": ""
+          },
+          {
+            "missionName": "CRS-23",
+            "typeVehicle": "Cargo Dragon",
+            "missionDate": {
+              "date": "08/29/2021",
+              "time": "07:14"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Orbital re-entry, ocean splashdown",
+              "name": "TBD",
+              "status": "TBD"
+            },
+            "status": "TBD",
+            "notes": "",
             "launchLink": ""
           }
         ]
@@ -2244,6 +2278,23 @@
             "status": "Successful",
             "notes": "",
             "launchLink": "https://www.youtube.com/watch?v=O97dPDkUGg4"
+          },
+          {
+            "missionName": "Flight 17",
+            "typeVehicle": "New Shepard",
+            "missionDate": {
+              "date": "08/25/2021",
+              "time": "14:31"
+            },
+            "launchLoc": "Corn Ranch",
+            "recovery": {
+              "type": "Ground pad",
+              "name": "Corn Ranch",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "",
+            "launchLink": "https://www.youtube.com/watch?v=ZUZZ0EDzII0"
           }
         ]
       },
