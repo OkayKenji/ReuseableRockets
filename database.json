@@ -1,7 +1,7 @@
 {
   "lastUpdate": {
-    "date": "09/01/2021",
-    "time": "22:47:08"
+    "date": "10/03/2021",
+    "time": "05:14:14"
   },
   "spacex": {
     "boosters": [
@@ -383,6 +383,23 @@
             "status": "Successful",
             "notes": "",
             "launchLink": "https://www.youtube.com/watch?v=xpl_JnG7rcg"
+          },
+          {
+            "missionName": "Starlink Group 2-1",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "09/14/2021",
+              "time": "03:55"
+            },
+            "launchLoc": "SLC-4E",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "OCISLY",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "First operational Starlink launch from the west coast.",
+            "launchLink": "https://www.youtube.com/watch?v=4372QYiPZB4"
           }
         ]
       },
@@ -1311,6 +1328,23 @@
             "status": "Successful",
             "notes": "First NSSL mission to fly on a reused booster.",
             "launchLink": "https://www.youtube.com/watch?v=QJXxVtp3KqI"
+          },
+          {
+            "missionName": "Inspiration4",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "09/16/2021",
+              "time": "00:02"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "JRtI",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Carried Jared Isaacman, Sian Proctor, Hayley Arceneaux, and Chris Sembroski to free orbit; raising money for St. Jude Children's Hospital.",
+            "launchLink": "https://www.youtube.com/watch?v=3pv01sSq44w"
           }
         ]
       },
@@ -1416,7 +1450,7 @@
             "launchLoc": "LC-39A",
             "recovery": {
               "type": "Ocean splashdown",
-              "name": "Atlantic ocean",
+              "name": "Atlantic Ocean",
               "status": "Successful"
             },
             "status": "Successful",
@@ -1485,6 +1519,23 @@
             "status": "Successful",
             "notes": "First operational flight. Successfully carried Mike Hopkins, Victor Glover, Shannon Walker, and Sochi Noguchi.",
             "launchLink": ""
+          },
+          {
+            "missionName": "Inspiration4",
+            "typeVehicle": "Crew Dragon",
+            "missionDate": {
+              "date": "09/16/2021",
+              "time": "00:02"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Orbital re-entry, ocean splashdown",
+              "name": "Atlantic Ocean",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Carried Jared Isaacman, Sian Proctor, Hayley Arceneaux, and Chris Sembroski to free orbit; raising money for St. Jude Children's Hospital. Crew Dragon was outfitted witch a Cupola instead of a docking port.",
+            "launchLink": ""
           }
         ]
       },
@@ -1519,10 +1570,10 @@
             "launchLoc": "LC-39A",
             "recovery": {
               "type": "Orbital re-entry, ocean splashdown",
-              "name": "TBD",
-              "status": "TBD"
+              "name": "Atlantic Ocean",
+              "status": "Successful"
             },
-            "status": "TBD",
+            "status": "Successful",
             "notes": "",
             "launchLink": ""
           }
