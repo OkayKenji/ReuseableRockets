@@ -27,5 +27,5 @@ Data
  - https://www.theverge.com
  - https://www.spacex.com/ and YouTube Webcasts
 
-All data as of 08/13/2021. Data should be updated every mission; or at least every month. 
+All data as of 10/03/2021. Data should be updated every month. 
 v1.2 - Revamped backside, removed formatter from public access
