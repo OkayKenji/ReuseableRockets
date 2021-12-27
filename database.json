@@ -1,7 +1,7 @@
 {
   "lastUpdate": {
-    "date": "10/03/2021",
-    "time": "05:14:14"
+    "date": "12/27/2021",
+    "time": "08:28:40"
   },
   "spacex": {
     "boosters": [
@@ -599,6 +599,23 @@
             "status": "Successful",
             "notes": "First booster to fly 10 missions.",
             "launchLink": "https://www.youtube.com/watch?v=J71s2KmkSrc"
+          },
+          {
+            "missionName": "Starlink Group 4-4",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "12/18/2021",
+              "time": "12:41"
+            },
+            "launchLoc": "SLC-4E",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "OCISLY",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "52 satellites in a 53 degree inclination.",
+            "launchLink": "https://www.youtube.com/watch?v=q4Ed3EBx90s"
           }
         ]
       },
@@ -713,7 +730,7 @@
             "missionName": "Arabsat-6A",
             "typeVehicle": "Falcon Heavy",
             "missionDate": {
-              "date": "04/11/2919",
+              "date": "04/11/2019",
               "time": "22:35"
             },
             "launchLoc": "LC-39A",
@@ -964,6 +981,23 @@
             "status": "Successful",
             "notes": "Only 52 Starlinks deployed. One customer satellite deoplyed from top of Starlink stack, the other from aft end.",
             "launchLink": "https://www.youtube.com/watch?v=tdgg_qwj-hI"
+          },
+          {
+            "missionName": "Starlink Group 4-1",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "11/13/2021",
+              "time": "12:19"
+            },
+            "launchLoc": "SLC-40",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "JRtI",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "53 Starlinks deployed, beautiful fog at liftoff.",
+            "launchLink": "https://www.youtube.com/watch?v=AtmtP4vouSY"
           }
         ]
       },
@@ -1214,6 +1248,23 @@
             "status": "Successful",
             "notes": "Deployed 88 satellites, including 3 Starlinks, Some payloads deployed from aft of Falcon. Tyvak-0173 had a delayed separation confirmation, ",
             "launchLink": "https://www.youtube.com/watch?v=sSiuW1HcGjA"
+          },
+          {
+            "missionName": "Starlink Group 4-3 (with SXRS-2)",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "12/02/2021",
+              "time": "23:12"
+            },
+            "launchLoc": "SLC-40",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "ASOG",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "48 Starlinks with two BlackSky satellites released from top of stack.",
+            "launchLink": "https://www.youtube.com/watch?v=594TbXriaAk"
           }
         ]
       },
@@ -1282,12 +1333,29 @@
             "launchLoc": "LC-39A",
             "recovery": {
               "type": "Drone ship",
-              "name": "ASoG",
+              "name": "ASOG",
               "status": "Successful"
             },
             "status": "Successful",
             "notes": "First landing on A Shortfall of Gravitas.",
             "launchLink": "https://www.youtube.com/watch?v=x-KiDqxAMU0"
+          },
+          {
+            "missionName": "IXPE",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "12/09/2021",
+              "time": "06:00"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "JRtI",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Preformed major orbital plane change to reach a near 0 degree inclination.",
+            "launchLink": "https://www.youtube.com/watch?v=CpmHsN5GUn8"
           }
         ]
       },
@@ -1385,12 +1453,29 @@
             "status": "Successful",
             "notes": "",
             "launchLink": "https://www.youtube.com/watch?v=xRu-ekesDyY"
+          },
+          {
+            "missionName": "DART",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "11/24/2021",
+              "time": "06:21"
+            },
+            "launchLoc": "SLC-4E",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "OCISLY",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Asteroid redirect test. First official interplanetary launch.",
+            "launchLink": "https://www.youtube.com/watch?v=XKRf6-NcMqI"
           }
         ]
       },
       {
         "name": "B1067",
-        "status": "Inactive",
+        "status": "Active",
         "flights": [
           {
             "missionName": "CRS-22",
@@ -1408,6 +1493,63 @@
             "status": "Successful",
             "notes": "",
             "launchLink": "https://www.youtube.com/watch?v=QXf9mRWbXDM"
+          },
+          {
+            "missionName": "Crew-3",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "11/11/2021",
+              "time": "02:03"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "ASOG",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Launched Thomas Marshburn, Kayla Barron, Raja Chari, and Matthias Maurer to the ISS.",
+            "launchLink": "https://www.youtube.com/watch?v=WZvtrnFItNs"
+          },
+          {
+            "missionName": "Turksat 5B",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "12/19/2021",
+              "time": "03:58"
+            },
+            "launchLoc": "SLC-40",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "ASOG",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "",
+            "launchLink": "https://www.youtube.com/watch?v=JBGjE9_aosc"
+          }
+        ]
+      },
+      {
+        "name": "B1069",
+        "status": "Active",
+        "flights": [
+          {
+            "missionName": "CRS-24",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "12/21/2021",
+              "time": "10:06"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "JRtI",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "",
+            "launchLink": "https://www.youtube.com/watch?v=gEv6HLHYhWo"
           }
         ]
       }
@@ -1490,11 +1632,11 @@
             "launchLoc": "LC-39A",
             "recovery": {
               "type": "Orbital re-entry, ocean splashdown",
-              "name": "TBD",
-              "status": "TBD"
+              "name": "Gulf of Mexico",
+              "status": "Successful"
             },
-            "status": "TBD",
-            "notes": "Carried Shane Kimbrough, Megan McArthur, Akihiki \"Aki\" Hoshide, and Thomas Pesquet to the ISS.",
+            "status": "Successful",
+            "notes": "Carried Shane Kimbrough, Megan McArthur, Akihiki \"Aki\" Hoshide, and Thomas Pesquet to the ISS and back.",
             "launchLink": ""
           }
         ]
@@ -1598,6 +1740,46 @@
             },
             "status": "Successful",
             "notes": "",
+            "launchLink": ""
+          },
+          {
+            "missionName": "CRS-24",
+            "typeVehicle": "Cargo Dragon",
+            "missionDate": {
+              "date": "12/21/2021",
+              "time": "10:06"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Orbital re-entry, ocean splashdown",
+              "name": "TBD",
+              "status": "TBD"
+            },
+            "status": "TBD",
+            "notes": "",
+            "launchLink": ""
+          }
+        ]
+      },
+      {
+        "name": "C210 \"Endurance\"",
+        "status": "Active",
+        "flights": [
+          {
+            "missionName": "Crew-3",
+            "typeVehicle": "Crew Dragon",
+            "missionDate": {
+              "date": "11/11/2021",
+              "time": "02:03"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Orbital re-entry, ocean splashdown",
+              "name": "TBD",
+              "status": "TBD"
+            },
+            "status": "TBD",
+            "notes": "Launched Thomas Marshburn, Kayla Barron, Raja Chari, and Matthias Maurer to the ISS.",
             "launchLink": ""
           }
         ]
@@ -2088,6 +2270,52 @@
             "launchLink": "https://www.youtube.com/watch?v=XEAKezzYi4Q"
           }
         ]
+      },
+      {
+        "name": "Love At First Insight",
+        "status": "Inactive",
+        "flights": [
+          {
+            "missionName": "Love At First Insight",
+            "typeVehicle": "Electron",
+            "missionDate": {
+              "date": "11/18/2021",
+              "time": "01:38"
+            },
+            "launchLoc": "LC-1A",
+            "recovery": {
+              "type": "Parachute ocean touchdown",
+              "name": "N/A",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Improved heat shield and helicopter was on scene without a catch attempt.",
+            "launchLink": "https://www.youtube.com/watch?v=N-sVCWo_xpE"
+          }
+        ]
+      },
+      {
+        "name": "A Data With Destiny",
+        "status": "Inactive",
+        "flights": [
+          {
+            "missionName": "A Data With Destiny",
+            "typeVehicle": "Electron",
+            "missionDate": {
+              "date": "12/09/2021",
+              "time": "00:02"
+            },
+            "launchLoc": "LC-1A",
+            "recovery": {
+              "type": "No attempt",
+              "name": "N/A",
+              "status": "Expended"
+            },
+            "status": "Successful",
+            "notes": "",
+            "launchLink": "https://www.youtube.com/watch?v=PmCl2Hs8enc"
+          }
+        ]
       }
     ]
   },
@@ -2403,6 +2631,40 @@
             "status": "Successful",
             "notes": "Carried Wally Funk, Oliver Daemen, Mark Bezos, and Jeff Bezos to space and back.",
             "launchLink": "https://www.youtube.com/watch?v=tMHhXzpwupU"
+          },
+          {
+            "missionName": "Flight 18",
+            "typeVehicle": "New Shepard",
+            "missionDate": {
+              "date": "10/13/2021",
+              "time": "14:49"
+            },
+            "launchLoc": "Corn Ranch",
+            "recovery": {
+              "type": "Ground pad",
+              "name": "Corn Ranch",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Carried Chris Boshuizen, Glen de Vries, William Shatner, and Audrey Powers.",
+            "launchLink": "https://www.youtube.com/watch?v=uEhdlIor-do"
+          },
+          {
+            "missionName": "Flight 19",
+            "typeVehicle": "New Shepard",
+            "missionDate": {
+              "date": "12/11/2021",
+              "time": "15:01"
+            },
+            "launchLoc": "Corn Ranch",
+            "recovery": {
+              "type": "Ground pad",
+              "name": "Corn Ranch",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Record 6 people! Carried Lane Bess, Cameron Bess, Evan Dick, Laura Shepard Churchley, Michael Strahan, and Dylan Taylor.",
+            "launchLink": "https://www.youtube.com/watch?v=MpaiuDg_DN4"
           }
         ]
       }
