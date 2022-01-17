@@ -27,5 +27,5 @@ Data
  - https://www.theverge.com
  - https://www.spacex.com/ and YouTube Webcasts
 
-All data as of 12/27/2021. Data should be updated every month. 
+All data as of 1/16/2022. Data should be updated every month. 
 v1.2 - Revamped backside, removed formatter from public access
