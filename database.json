@@ -1,7 +1,7 @@
 {
   "lastUpdate": {
-    "date": "12/27/2021",
-    "time": "08:28:40"
+    "date": "01/14/2022",
+    "time": "00:18:25"
   },
   "spacex": {
     "boosters": [
@@ -998,6 +998,23 @@
             "status": "Successful",
             "notes": "53 Starlinks deployed, beautiful fog at liftoff.",
             "launchLink": "https://www.youtube.com/watch?v=AtmtP4vouSY"
+          },
+          {
+            "missionName": "Transporter-3",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "01/13/2022",
+              "time": "15:25"
+            },
+            "launchLoc": "SLC-40",
+            "recovery": {
+              "type": "Ground pad",
+              "name": "LZ-1",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "105 spacecraft deployed. Again had delayed spacecraft separation confirmation likely due to the number of satellites.",
+            "launchLink": "https://www.youtube.com/watch?v=mFBeuSAvhUQ"
           }
         ]
       },
@@ -1413,6 +1430,23 @@
             "status": "Successful",
             "notes": "Carried Jared Isaacman, Sian Proctor, Hayley Arceneaux, and Chris Sembroski to free orbit; raising money for St. Jude Children's Hospital.",
             "launchLink": "https://www.youtube.com/watch?v=3pv01sSq44w"
+          },
+          {
+            "missionName": "Starlink Group 4-5",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "01/06/2022",
+              "time": "21:49"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Drone Shop",
+              "name": "ASOG",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Carried 49 satellites to orbit. Flew a southern trajectory for recovery weather.",
+            "launchLink": "https://www.youtube.com/watch?v=4_ePBpwMhns"
           }
         ]
       },
