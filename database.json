@@ -1,7 +1,7 @@
 {
   "lastUpdate": {
-    "date": "01/14/2022",
-    "time": "00:18:25"
+    "date": "08/05/2022",
+    "time": "03:13:31"
   },
   "spacex": {
     "boosters": [
@@ -616,6 +616,23 @@
             "status": "Successful",
             "notes": "52 satellites in a 53 degree inclination.",
             "launchLink": "https://www.youtube.com/watch?v=q4Ed3EBx90s"
+          },
+          {
+            "missionName": "Starlink Group 4-12",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "03/19/2022",
+              "time": "04:42"
+            },
+            "launchLoc": "SLC-40",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "JRtI",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "53 satellites.",
+            "launchLink": "https://www.youtube.com/watch?v=0giA6VZOICs"
           }
         ]
       },
@@ -656,6 +673,40 @@
             "status": "Successful",
             "notes": "",
             "launchLink": "https://www.youtube.com/watch?v=WxH4CAlhtiQ"
+          },
+          {
+            "missionName": "CSG-2",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "01/31/2022",
+              "time": "23:11"
+            },
+            "launchLoc": "SLC-40",
+            "recovery": {
+              "type": "Ground pad",
+              "name": "LZ-1",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "First Falcon Heavy booster to be converted to Falcon 9 missions.",
+            "launchLink": "https://www.youtube.com/watch?v=zBxHrNIzp9w"
+          },
+          {
+            "missionName": "Starlink Group 4-10",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "03/09/2022",
+              "time": "13:45"
+            },
+            "launchLoc": "SLC-40",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "ASoG",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "48 satellites",
+            "launchLink": "https://www.youtube.com/watch?v=uqAppamdGyo"
           }
         ]
       },
@@ -1015,6 +1066,23 @@
             "status": "Successful",
             "notes": "105 spacecraft deployed. Again had delayed spacecraft separation confirmation likely due to the number of satellites.",
             "launchLink": "https://www.youtube.com/watch?v=mFBeuSAvhUQ"
+          },
+          {
+            "missionName": "Starlink Group 4-8",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "02/21/2022",
+              "time": "14:44"
+            },
+            "launchLoc": "SLC-40",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "ASoG",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Launched 46 satellites.",
+            "launchLink": "https://www.youtube.com/watch?v=eiKOMCRymsw"
           }
         ]
       },
@@ -1282,6 +1350,40 @@
             "status": "Successful",
             "notes": "48 Starlinks with two BlackSky satellites released from top of stack.",
             "launchLink": "https://www.youtube.com/watch?v=594TbXriaAk"
+          },
+          {
+            "missionName": "Starlink Group 4-6",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "01/19/2022",
+              "time": "02:02"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "ASOG",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Launched only 49 satellites.",
+            "launchLink": "https://www.youtube.com/watch?v=Yov854ZT1lg"
+          },
+          {
+            "missionName": "Starlink Group 4-9",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "03/03/2022",
+              "time": "14:25"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "JRtI",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "47 satellites",
+            "launchLink": "https://www.youtube.com/watch?v=ypb2sDdUkRo"
           }
         ]
       },
@@ -1373,6 +1475,40 @@
             "status": "Successful",
             "notes": "Preformed major orbital plane change to reach a near 0 degree inclination.",
             "launchLink": "https://www.youtube.com/watch?v=CpmHsN5GUn8"
+          },
+          {
+            "missionName": "Starlink Group 4-7",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "02/03/2022",
+              "time": "18:13"
+            },
+            "launchLoc": "LC-39A",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "ASoG",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Launched only 49 satellites. But 38 later reentered due to magnetic storm.",
+            "launchLink": "https://www.youtube.com/watch?v=UY3fZ6PwuUY"
+          },
+          {
+            "missionName": "Transporter-4",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "04/01/2022",
+              "time": "16:24"
+            },
+            "launchLoc": "SLC-40",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "JRtI",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "40 satellites.",
+            "launchLink": "https://www.youtube.com/watch?v=4NqSoHnkKEM"
           }
         ]
       },
@@ -1504,6 +1640,23 @@
             "status": "Successful",
             "notes": "Asteroid redirect test. First official interplanetary launch.",
             "launchLink": "https://www.youtube.com/watch?v=XKRf6-NcMqI"
+          },
+          {
+            "missionName": "Starlink Group 4-11",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "02/25/2022",
+              "time": "17:12"
+            },
+            "launchLoc": "SLC-4E",
+            "recovery": {
+              "type": "Drone ship",
+              "name": "OCISLY",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "Carried 50 satellites.",
+            "launchLink": "https://www.youtube.com/watch?v=nnVOfKOzXHE"
           }
         ]
       },
@@ -1584,6 +1737,29 @@
             "status": "Successful",
             "notes": "",
             "launchLink": "https://www.youtube.com/watch?v=gEv6HLHYhWo"
+          }
+        ]
+      },
+      {
+        "name": "B1071",
+        "status": "Active",
+        "flights": [
+          {
+            "missionName": "NROL-87",
+            "typeVehicle": "Falcon 9",
+            "missionDate": {
+              "date": "02/02/2022",
+              "time": "18:13"
+            },
+            "launchLoc": "SLC-4E",
+            "recovery": {
+              "type": "Ground pad",
+              "name": "LZ-4",
+              "status": "Successful"
+            },
+            "status": "Successful",
+            "notes": "",
+            "launchLink": "https://www.youtube.com/watch?v=bVk8XyjhTKo"
           }
         ]
       }
@@ -1670,7 +1846,7 @@
               "status": "Successful"
             },
             "status": "Successful",
-            "notes": "Carried Shane Kimbrough, Megan McArthur, Akihiki \"Aki\" Hoshide, and Thomas Pesquet to the ISS and back.",
+            "notes": "Carried Shane Kimbrough, Megan McArthur, Akihiki \"Aki\" Hoshide, and Thomas Pesquet to the ISS and back. One of four parachute deployed slower then expected.",
             "launchLink": ""
           }
         ]
@@ -1786,11 +1962,11 @@
             "launchLoc": "LC-39A",
             "recovery": {
               "type": "Orbital re-entry, ocean splashdown",
-              "name": "TBD",
-              "status": "TBD"
+              "name": "Gulf of Mexico",
+              "status": "Successful"
             },
-            "status": "TBD",
-            "notes": "",
+            "status": "Successful",
+            "notes": "One of four parachutes deployed slower then expected. NASA & SpaceX failed to disclose issue in timely manner.",
             "launchLink": ""
           }
         ]
